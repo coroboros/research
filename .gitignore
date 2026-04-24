@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+.claude/output/
+.claude/settings.local.json
+CLAUDE.local.md
+.env
+.env.*
+!.env.example
