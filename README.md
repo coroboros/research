@@ -31,7 +31,8 @@ Long-form technical references under [articles/](articles/). See [INDEX.md](INDE
 
 | Article | Topics |
 |---------|--------|
-| [Building award-winning websites: a complete technical reference for 2025–2026](articles/building-award-winning-websites-2025-2026.md) | web-design, awwwards, animation, performance |
+| [The 2026 — 2030 Stack](articles/2026-2030-stack.md) | stack, infrastructure, edge-computing, sync-engines, typescript, elixir |
+| [Award-Winning Websites — 2025–2030 Reference](articles/award-winning-websites-2025-2030/award-winning-websites-2025-2030.md) | web-design, awwwards, animation, webgl, performance |
 
 ---
 
@@ -46,8 +47,8 @@ Short-form observations, hypotheses, and synthesis pieces under [notes/](notes/)
 ## How to cite
 
 ```
-Coroboros Research. "Building award-winning websites: a complete technical reference for 2025–2026."
-https://github.com/coroboros/research/blob/main/articles/building-award-winning-websites-2025-2026.md
+Coroboros Research. "The 2026 — 2030 Stack."
+https://github.com/coroboros/research/blob/main/articles/2026-2030-stack.md
 ```
 
 See [License](#license) for usage terms.
