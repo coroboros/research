@@ -7,7 +7,7 @@
 
 **Deep research and technical reference articles from Coroboros**
 
-Curated knowledge that feeds our open skills, tools, and docs.
+Curated knowledge that feeds Coroboros' open skills, tools, and docs.
 
 [![text](https://img.shields.io/badge/text-CC--BY--4.0-000000?style=flat-square)](LICENSE.md)
 [![code](https://img.shields.io/badge/code-MIT-000000?style=flat-square)](LICENSE.md)
