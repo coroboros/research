@@ -4,7 +4,11 @@ Cross-topic index of articles and notes in this repo. Organized by topic, regard
 
 ## Web design & performance
 
-- **Article** · [Building award-winning websites: a complete technical reference for 2025–2026](articles/building-award-winning-websites-2025-2026.md) — 2026-04-13 — `web-design` `awwwards` `fwa` `cssda` `animation` `gsap` `webgl` `performance` `typography` `css`
+- **Article** · [Award-Winning Websites — 2025–2030 Reference](articles/award-winning-websites-2025-2030/award-winning-websites-2025-2030.md) — 2026-04-13 — `web-design` `awwwards` `fwa` `cssda` `animation` `gsap` `webgl` `webgpu` `typography` `css` `oklch` `performance` `accessibility`
+
+## Stack & infrastructure
+
+- **Article** · [The 2026 — 2030 Stack](articles/2026-2030-stack.md) — 2026-04-27 — `stack` `infrastructure` `edge-computing` `local-first` `sync-engines` `typescript` `elixir` `cloudflare` `solo-founder` `pricing`
 
 ## AI engineering
 
