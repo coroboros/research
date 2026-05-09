@@ -12,7 +12,7 @@ Cross-topic index of articles and notes in this repo. Organized by topic, regard
 
 ## AI engineering
 
-*(none yet)*
+- **Article** · [Suno v5.5 — Operator Reference](articles/suno-v5-5-operator-reference.md) — 2026-05-09 — `ai-engineering` `ai-music` `suno` `music-generation` `prompt-engineering` `voice-cloning` `custom-models` `audio-ai` `copyright` `ai-licensing`
 
 ## Tooling & developer experience
 
