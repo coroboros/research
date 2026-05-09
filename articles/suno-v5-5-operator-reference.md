@@ -24,15 +24,15 @@ sources:
 
 # Suno v5.5 — Operator Reference
 
-The mainstream consensus is that Suno v5.5 is a personalization layer bolted onto v5, not a new audio engine — and the prompting surface is where most of the unrealized control lives. Treat the Style of Music field, the Lyrics field, and the Creative Sliders as three independent control planes. Tracks improve when each plane carries its own job and stops carrying the others.
+The mainstream consensus is that Suno v5.5 is a personalization layer bolted onto v5, not a new audio engine. The prompting surface is where the unrealized control lives. Treat the Style of Music field, the Lyrics field, and the Creative Sliders as three independent control planes. Tracks improve when each plane carries its own job and stops carrying the others.
 
 Released March 26, 2026. Successor to v5 (chirp-crow). Internal model identifier `V5_5`. Pro and Premier tiers; free tier remains on v4.5-all. Surfaces: Web, iOS, Android, Suno Studio (Premier).
 
 ## TL;DR
 
 - v5.5 ships voice cloning (Voices), per-user fine-tunes (Custom Models, up to three per Pro/Premier seat), and a passive preference layer (My Taste). Prompt syntax is unchanged from v5; the Style Stack still drives output.
-- The 1,000-character Style of Music field carries five descriptor classes — genre, era, mood, instruments, vocal direction — with a sweet spot of four to seven tags. Less yields generic; more produces conflict.
-- Commercial-rights chain remains broken at the copyright-vesting layer, the WMG settlement (November 25, 2025) commits Suno to deprecating current models when licensed successors ship later in 2026, and there is no public API. Export WAV now.
+- The Style of Music field is 1,000 characters. It carries five descriptor classes: genre, era, mood, instruments, vocal direction. Sweet spot is four to seven tags. Less yields generic; more produces conflict.
+- The commercial-rights chain remains broken at the copyright-vesting layer. The WMG settlement (November 25, 2025) commits Suno to deprecating current models when licensed successors ship later in 2026. There is no public API. Export WAV now.
 
 ## Key Findings
 
@@ -47,7 +47,7 @@ Released March 26, 2026. Successor to v5 (chirp-crow). Internal model identifier
 9. RIAA litigation continues against Suno in Massachusetts. GEMA judgment in Munich is scheduled for June 12, 2026. WMG settled and partnered November 25, 2025.
 10. There is no official public API. Every "Suno API" — kie.ai, sunoapi.org, CometAPI, gcui-art/suno-api — is a reverse-engineered wrapper with vendor shutdown precedent (PiAPI's Suno V5 line was discontinued).
 
-## 1. What v5.5 Is
+## 1 / What v5.5 Is
 
 Suno v5.5 launched March 26, 2026. The release framing from Suno's own blog: "v5.5 is our deepest expression of that belief so far, a model that doesn't just help create music, but fully reflects the person making it." Three personalization vectors ship alongside the model:
 
@@ -61,23 +61,23 @@ v5.5 inherits v5's audio engine: 44.1 kHz stereo, up to 8 minutes per generation
 
 The Personas button in the Create menu was renamed Voices. Existing Style Personas remain inside the Voices tab.
 
-## 2. Flagship Features
+## 2 / Flagship Features
 
-### 2.1 Voices
+### 2.1 / Voices
 
 Workflow: select Voice in Create, choose existing Voice or Create Voice, supply audio (record live, upload, or pick from a Suno song in the user's library). Suno asks the speaker to read a randomly displayed verification phrase aloud. The system compares the spoken phrase to the uploaded singing audio. Mismatches block the registration. Voices are private to the registering account.
 
-*Consent and training data.* Suno's verification gate prevents registering somebody else's voice through the official UI. It does not prevent registering a voice already cloned by an external tool, then reading the verification phrase in the cloner. Registered Voices are private but inputs may still be processed in ways governed by Suno's evolving terms; treat the verification step as fraud control, not provenance.
+*Consent and training data.* Suno's verification gate prevents registering somebody else's voice through the official UI. It does not prevent registering a voice already cloned by an external tool, then reading the verification phrase in the cloner. Registered Voices are private. Inputs may still be processed under Suno's evolving terms. Treat the verification step as fraud control, not provenance.
 
-### 2.2 Custom Models
+### 2.2 / Custom Models
 
 Open the model dropdown in Create, select Create Custom Model, upload at least six tracks the user owns rights to, name the model. Training takes 2–5 minutes. The model lands in the model picker. Mixed-genre training material produces unstable output; single-lane catalogs (e.g., orchestral only, future bass only) produce coherent personalization.
 
-### 2.3 My Taste
+### 2.3 / My Taste
 
 Default-on. Influences the Magic Wand suggestions in the Style box and biases generation defaults when prompts are underspecified. Does not override an explicit Style field. Disable from the avatar menu > My Taste.
 
-## 3. Modes and Surfaces
+## 3 / Modes and Surfaces
 
 | Mode | Inputs | When to use |
 |---|---|---|
@@ -88,7 +88,7 @@ Default-on. Influences the Magic Wand suggestions in the Style box and biases ge
 
 Custom Mode is required for serious work. Simple Mode strips field separation and suppresses Sliders.
 
-## 4. Field Limits
+## 4 / Field Limits
 
 | Field | v5.5 limit | Notes |
 |---|---|---|
@@ -103,11 +103,11 @@ Custom Mode is required for serious work. Simple Mode strips field separation an
 
 ---
 
-# 5. The Prompting Spine
+## 5 / The Prompting Spine
 
 This is the spine. Everything else is scaffolding. The prompting layer is where v5.5 is won or lost. The model is more obedient than v5; that obedience punishes vague prompts harder.
 
-## 5.1 The Style Stack — Anatomy of the Style of Music Field
+### 5.1 / The Style Stack — Anatomy of the Style of Music Field
 
 A Style of Music prompt is an ordered, weighted tag list. Fill it with four to seven descriptors across five classes. The verbatim formula from Suno's April 11, 2026 X post (Tier 1):
 
@@ -121,11 +121,11 @@ A Style of Music prompt is an ordered, weighted tag list. Fill it with four to s
 | Instruments | Acoustic guitar, 808 sub, Rhodes | Medium |
 | Vocal direction | Soft male vocal, breathy soprano, autotuned melodic rap | High when no Voice attached |
 
-### 5.1.1 Order matters
+#### 5.1.1 / Order matters
 
 Place genre first. Era and mood second. Instruments third. Vocal direction last unless vocal is the identity of the track, in which case promote it to second. Suno weights early tokens more than late tokens.
 
-### 5.1.2 Character budget
+#### 5.1.2 / Character budget
 
 The 1,000-character limit is generous, but density beats verbosity. Recommended allocation:
 
@@ -142,7 +142,7 @@ The 1,000-character limit is generous, but density beats verbosity. Recommended 
 
 Total: 280–730 characters. The remaining headroom is reserve, not a target.
 
-### 5.1.3 Filled stacks across genres
+#### 5.1.3 / Filled stacks across genres
 
 ```text
 Cinematic:
@@ -183,7 +183,7 @@ dusty jazzy piano sample, brushed drums, vinyl crackle,
 no vocals, 78 BPM
 ```
 
-### 5.1.4 Side-by-side: 1 / 6 / 12 descriptors
+#### 5.1.4 / Side-by-side: 1 / 6 / 12 descriptors
 
 ```text
 1 descriptor (generic):
@@ -202,7 +202,7 @@ synthwave pads, 808 trap drums, soft male vocal, belting female vocal,
 
 The 12-tag version forces Suno to average across "lo-fi" plus "hi-fi polished" and across two BPMs and two vocal genders. The model collapses to a moody average — the output the prompt did not ask for.
 
-### 5.1.5 Anti-patterns
+#### 5.1.5 / Anti-patterns
 
 | Mistake | Symptom | Fix |
 |---|---|---|
@@ -215,7 +215,7 @@ The 12-tag version forces Suno to average across "lo-fi" plus "hi-fi polished" a
 | Mixing tags and prose | Wasted tokens | Comma-separated tags |
 | Repeating the same tag in both fields | Doubled cost, no benefit | Style for sound, Lyrics for words |
 
-## 5.2 Genre Stacking and Fusion
+### 5.2 / Genre Stacking and Fusion
 
 Two genres maximum. Validated working pairs share at least one of tempo, instrumentation register, or vocal idiom.
 
@@ -234,7 +234,7 @@ Two genres maximum. Validated working pairs share at least one of tempo, instrum
 
 When fusion fails: BPM mismatch (lo-fi at 78 BPM with drum and bass at 174 BPM produces averaged 120 BPM nothing), vocal idiom conflict (operatic over drill is rare in training data), era conflict (60s Motown over modern hyperpop). Drop to one genre and reinforce with mood.
 
-## 5.3 Vocal Direction
+### 5.3 / Vocal Direction
 
 Name gender, register, timbre, delivery, age, and processing — in that order.
 
@@ -247,7 +247,7 @@ Name gender, register, timbre, delivery, age, and processing — in that order.
 | Age | Youthful, mature, weathered |
 | Processing | Autotuned, vocoded, telephone EQ, doubled, layered |
 
-### 5.3.1 Eight worked examples
+#### 5.3.1 / Eight worked examples
 
 ```text
 "Soft breathy female soprano, intimate close-mic, slight room"
@@ -270,7 +270,7 @@ Name gender, register, timbre, delivery, age, and processing — in that order.
 
 Anti-pattern: when a Voice profile is attached, drop all vocal descriptors from the Style field. They conflict with the cloned voice and produce blended timbre.
 
-## 5.4 Production Direction
+### 5.4 / Production Direction
 
 Era cue + texture cue + mix cue stack into a coherent recording aesthetic.
 
@@ -296,7 +296,7 @@ Triggering the right region:
   → bedroom-folk / indie demo region
 ```
 
-## 5.5 BPM and Key
+### 5.5 / BPM and Key
 
 Numeric BPM works as approximate guidance, not a metronome lock. v5.5 holds tempo more reliably than v5, but ±4 BPM drift is normal.
 
@@ -308,7 +308,7 @@ Numeric BPM works as approximate guidance, not a metronome lock. v5.5 holds temp
 
 Key specification ("D minor", "A major") is soft guidance. The model honors it about 60% of the time. For mixing-compatibility scenarios, generate, detect actual key with an external tool, and reuse the prompt with the corrected key.
 
-## 5.6 Negative Prompting / Exclude Styles
+### 5.6 / Negative Prompting / Exclude Styles
 
 Two mechanisms.
 
@@ -325,7 +325,7 @@ Mechanism two — Exclude Styles toggle. Pro and Premier only. Custom Mode > Mor
 
 API equivalent: `negativeTags` (string, comma-separated) in kie.ai and sunoapi.org schemas.
 
-### 5.6.1 Effective exclusions
+#### 5.6.1 / Effective exclusions
 
 | Category | Tags |
 |---|---|
@@ -338,7 +338,7 @@ API equivalent: `negativeTags` (string, comma-separated) in kie.ai and sunoapi.o
 
 Suno's Style Stack X post lists "Heavy distortion, Breathy vocals, Fast tempo" as canonical examples (Tier 1).
 
-### 5.6.2 Before / after
+#### 5.6.2 / Before / after
 
 ```text
 Before:
@@ -352,11 +352,11 @@ Output: stays acoustic, stays sparse
 
 Anti-pattern: do not use negatives to define. Five `no X` tags with no positive tags produce mush. Positives define, negatives refine. Cap exclusions at three.
 
-## 5.7 Meta Tag Canon — Structural Tags
+### 5.7 / Meta Tag Canon — Structural Tags
 
 Bracket tags belong in the Lyrics field, on their own line, at the start of the section they govern. They control arrangement.
 
-### 5.7.1 Tier 1 — officially documented
+#### 5.7.1 / Tier 1 — officially documented
 
 ```text
 [Intro]
@@ -369,7 +369,7 @@ Bracket tags belong in the Lyrics field, on their own line, at the start of the 
 [Instrumental]
 ```
 
-### 5.7.2 Tier 3 — community-validated, inconsistent
+#### 5.7.2 / Tier 3 — community-validated, inconsistent
 
 ```text
 [Hook]
@@ -387,7 +387,7 @@ Numbered variants ([Verse 1], [Verse 2]) work reliably for differentiation. Cust
 
 Order in the Lyrics field is the intended song order. Suno honors it most of the time. When it ignores order, regenerate; do not rewrite tags.
 
-## 5.8 Meta Tag Stacking Inside Sections
+### 5.8 / Meta Tag Stacking Inside Sections
 
 Stack three to five tags per section, line-broken, in the order structural → instrumentation → texture/mood → vocal direction. From Suno's April 11, 2026 X post (Tier 1):
 
@@ -401,7 +401,7 @@ Stack three to five tags per section, line-broken, in the order structural → i
 [Strings swell, emotional lift]
 ```
 
-### 5.8.1 Four additional worked examples
+#### 5.8.1 / Four additional worked examples
 
 ```text
 Cinematic build:
@@ -454,7 +454,7 @@ Industrial post-punk:
 
 Why stacking outperforms single tags: a single `[Chorus]` only signals arrangement. Stacked tags signal arrangement plus instrumentation plus texture plus delivery — four control surfaces engaged at the same line break. The model has more signal to act on.
 
-## 5.9 Vocal Direction Inline — Performance Cues
+### 5.9 / Vocal Direction Inline — Performance Cues
 
 Two formats.
 
@@ -479,7 +479,7 @@ The radio was never off
 
 Reliable inline cues: `[Whispered]`, `[Spoken Word]`, `[Belted]`, `[Falsetto]`, `[Harmonized]`, `[Layered Vocals]`, `[Ad-lib]`, `[Hummed]`, `[Shouted]`. Parenthetical equivalents work the same way: `(whispered)`, `(belted)`, `(shouted)`, `(building intensity)`, `(stripped back)`.
 
-### 5.9.1 Six before/after examples
+#### 5.9.1 / Six before/after examples
 
 ```text
 Before:
@@ -545,7 +545,7 @@ Hold on, hold on, hold on
 
 Tier 3 caveat: descriptor-style cues like `[Mood: Nostalgic]` and `[Energy: Soaring]` work inconsistently. Some renders honor them, some treat the bracket contents as lyrics. Use sparingly, audition every time, and do not depend on them.
 
-## 5.10 Lyric Flow and Pacing
+### 5.10 / Lyric Flow and Pacing
 
 From Suno's April 11, 2026 post (Tier 1): tight lines yield faster flow; blank lines between lyrics yield pacing. Line breaks are pacing signal, not aesthetic preference.
 
@@ -567,7 +567,7 @@ I don't mind long as you
 call me baby
 ```
 
-### 5.10.1 Four additional worked examples
+#### 5.10.1 / Four additional worked examples
 
 Rapid-fire flow (drill, bars per beat):
 
@@ -610,7 +610,7 @@ I'll wait all night (all night)
 Until the sun (the sun)
 ```
 
-### 5.10.2 Punctuation behavior
+#### 5.10.2 / Punctuation behavior
 
 | Mark | Effect |
 |---|---|
@@ -622,7 +622,7 @@ Until the sun (the sun)
 
 Anti-pattern: do not use exclamation marks expecting volume; v5.5 ignores them and they sometimes get sung as the word "exclamation."
 
-## 5.11 Language and Code-Switching
+### 5.11 / Language and Code-Switching
 
 Write the target language directly. Tags like `[Bilingual]` and `[Spanglish]` do not work alone.
 
@@ -646,7 +646,7 @@ For proper nouns and unusual phonemes, write phonetic spelling:
 
 Best supported languages (Tier 2 community testing): English, Spanish, Portuguese, French, Japanese, Korean, Mandarin. Other languages produce accented or imprecise pronunciation.
 
-## 5.12 SFX Bracket Tags
+### 5.12 / SFX Bracket Tags
 
 Stated plainly: most SFX brackets are unreliable in v5 and v5.5.
 
@@ -660,15 +660,15 @@ Stated plainly: most SFX brackets are unreliable in v5 and v5.5.
 | `[siren]` | Inconsistent |
 | `[doorbell]` | Almost always nothing |
 
-Do not deploy SFX bracket tags in production. Generate ambience separately via Suno Sounds (the experimental sound-effect generator), then layer in Studio. The Scribd "Suno AI Meta Tags Verification and Usage Guide" (Tier 3) catalogs which SFX tags reliably fail; use it as a do-not-use list, not a deployment list.
+Do not deploy SFX bracket tags in production. Generate ambience separately via Suno Sounds (the experimental sound-effect generator), then layer in Studio. The Scribd "Suno AI Meta Tags Verification and Usage Guide" (Tier 3) catalogs which SFX tags reliably fail. Treat it as a do-not-use list, not a deployment list.
 
-## 5.13 Section Length Control
+### 5.13 / Section Length Control
 
 `[Verse 8 bars]` and similar bar-count tags have no official support. Community reports are inconsistent. Honor rate is below 30%.
 
-What works: in Suno Studio, the Edit menu lets the user set bar counts per section directly, with a numeric input at the bottom-left of the section editor. That control is Tier 1 and reliable. Move bar-count work into Studio; do not put it in the Lyrics field.
+What works: in Suno Studio, the Edit menu sets bar counts per section directly. The control is a numeric input at the bottom-left of the section editor. Tier 1 and reliable. Move bar-count work into Studio; the Lyrics field is the wrong surface.
 
-## 5.14 Creative Sliders Deep Dive
+### 5.14 / Creative Sliders Deep Dive
 
 Suno's official help-center description (Tier 1):
 
@@ -680,7 +680,7 @@ Suno's official help-center description (Tier 1):
 | Style Influence | 0–100% | `styleWeight` (0.00–1.00) | Adherence to Style of Music tags |
 | Audio Influence | 0–100% | `audioWeight` (0.00–1.00) | Adherence to uploaded audio or Voice |
 
-### 5.14.1 Weirdness bands
+#### 5.14.1 / Weirdness bands
 
 | Band | Behavior |
 |---|---|
@@ -689,7 +689,7 @@ Suno's official help-center description (Tier 1):
 | 50–70% | Unusual instruments, rhythmic surprises, riskier vocal phrasing |
 | 70–100% | Genuinely unpredictable; sometimes brilliant, sometimes unusable |
 
-### 5.14.2 Style Influence bands
+#### 5.14.2 / Style Influence bands
 
 | Band | Behavior |
 |---|---|
@@ -698,11 +698,11 @@ Suno's official help-center description (Tier 1):
 | 60–80% | Tight adherence, recommended default |
 | 80–100% | Plateau; phrasing variation drops |
 
-### 5.14.3 Audio Influence
+#### 5.14.3 / Audio Influence
 
 Surfaces only with audio upload, Voice attached, or Cover. 70–90% recommended for cloning resemblance per community testing. Below 50% the upload becomes texture or reference rather than identity.
 
-### 5.14.4 Recommended profiles by genre
+#### 5.14.4 / Recommended profiles by genre
 
 | Genre | Weirdness | Style Influence | Audio Influence (if applicable) |
 |---|---|---|---|
@@ -716,7 +716,7 @@ Surfaces only with audio upload, Voice attached, or Cover. 70–90% recommended 
 
 Workflow rule: change one slider at a time, regenerate, A/B against the prior take. Otherwise the variable is uncontrolled.
 
-## 5.15 Voices-Aware Prompting
+### 5.15 / Voices-Aware Prompting
 
 When a Voice is attached, drop all vocal descriptors from the Style field and from the Lyrics field. They conflict with the clone.
 
@@ -734,7 +734,7 @@ The freed character budget reallocates to production detail (instruments, textur
 
 Suno's Voices FAQ (Tier 1) confirms: "If you find that the songs you make with your Voice don't sound like you, experiment with turning up the Audio Influence slider in the Create form."
 
-## 5.16 Custom Model-Aware Prompting
+### 5.16 / Custom Model-Aware Prompting
 
 A Custom Model already encodes style. Drop redundant style descriptors. Use the Style field for variations within the model's range.
 
@@ -751,7 +751,7 @@ rising tension, no choir, 90 BPM
 
 The Custom Model handles genre, era, and aesthetic. The Style field handles deviation from the model's center. Custom Model + Voice + 70–90% Audio Influence is the deepest personalization stack v5.5 offers.
 
-## 5.17 Common Pitfalls — Consolidated
+### 5.17 / Common Pitfalls — Consolidated
 
 | Don't | Do |
 |---|---|
@@ -770,11 +770,11 @@ The Custom Model handles genre, era, and aesthetic. The Style field handles devi
 | Use Custom Model and re-state its genre | Drop redundant descriptors; the model encodes them |
 | Move three sliders at once | One slider at a time, A/B compare |
 
-## 5.18 Style of Music Templates by Genre
+### 5.18 / Style of Music Templates by Genre
 
 Eight fully worked recipes. Each is copy-pasteable.
 
-### 5.18.1 Cinematic / score
+#### 5.18.1 / Cinematic / score
 
 ```text
 Style of Music (≤300 chars):
@@ -801,9 +801,9 @@ Lyrics scaffold:
 [Solo cello, fading reverb tail]
 ```
 
-Annotation: Weirdness pushed to 60 because cinematic underscoring benefits from unexpected harmonic motion; Style Influence kept at 55 because the bracket-stack inside Lyrics carries the section logic.
+Annotation: Weirdness pushed to 60 because cinematic underscoring benefits from unexpected harmonic motion. Style Influence kept at 55 because the bracket-stack inside Lyrics carries the section logic.
 
-### 5.18.2 Melodic techno
+#### 5.18.2 / Melodic techno
 
 ```text
 Style of Music:
@@ -836,9 +836,9 @@ Lyrics scaffold:
 [Filter down, tail to silence]
 ```
 
-Annotation: female vocal hook is in Style despite Exclude Styles listing "vocals" — the exclusion is for sung verses; the brief hook phrase is treated as texture and survives.
+Annotation: female vocal hook stays in Style despite Exclude Styles listing "vocals". The exclusion blocks sung verses; the brief hook phrase reads as texture and survives.
 
-### 5.18.3 Melodic trap
+#### 5.18.3 / Melodic trap
 
 ```text
 Style of Music:
@@ -875,7 +875,7 @@ Block cold, head spinning, lights low
 
 Annotation: 145 BPM half-time renders as a 70 BPM groove with hi-hats riding the upper grid — the canonical trap feel. State both numbers explicitly.
 
-### 5.18.4 Alt rock
+#### 5.18.4 / Alt rock
 
 ```text
 Style of Music:
@@ -912,7 +912,7 @@ Lyrics scaffold:
 
 Annotation: Style Influence at 75 because the distorted-guitar identity needs to lock; Weirdness at 35 to keep the riff structure conventional.
 
-### 5.18.5 Ambient drone
+#### 5.18.5 / Ambient drone
 
 ```text
 Style of Music:
@@ -939,7 +939,7 @@ Lyrics scaffold (instrumental — toggle Instrumental ON):
 
 Annotation: Weirdness 75 is correct for ambient — the genre rewards melodic surprise; Style Influence 40 lets the texture breathe rather than forcing arrangement convention.
 
-### 5.18.6 Vocal-forward indie pop
+#### 5.18.6 / Vocal-forward indie pop
 
 ```text
 Style of Music:
@@ -979,7 +979,7 @@ Waiting on a reason to stay
 
 Annotation: vocal descriptors in Style are kept because no Voice is attached. With a Voice, drop "soft female vocal, room mic" and route those characters into more production detail.
 
-### 5.18.7 Ritual industrial post-punk
+#### 5.18.7 / Ritual industrial post-punk
 
 ```text
 Style of Music:
@@ -1013,7 +1013,7 @@ Lyrics scaffold:
 
 Annotation: this recipe pulls from a thin region of the model. Generate four variations and discard three. Higher Weirdness is essential.
 
-### 5.18.8 Lo-fi hip-hop / chillhop
+#### 5.18.8 / Lo-fi hip-hop / chillhop
 
 ```text
 Style of Music:
@@ -1041,11 +1041,11 @@ Lyrics scaffold (instrumental):
 [Drums return, fade to vinyl noise]
 ```
 
-Annotation: lo-fi rewards "no vocals" in both Exclude Styles and the Style field — the genre is identified by absence as much as presence.
+Annotation: lo-fi rewards "no vocals" in both Exclude Styles and the Style field. The genre is identified by absence as much as presence.
 
 ---
 
-# 6. Personas / Voices Workflow
+## 6 / Personas / Voices Workflow
 
 | Step | Detail |
 |---|---|
@@ -1058,7 +1058,7 @@ Annotation: lo-fi rewards "no vocals" in both Exclude Styles and the Style field
 
 Acapella beats fully produced audio. If the input has a backing track, Suno auto-runs stem extraction. Voices remain private to the account. Voice sharing is unimplemented.
 
-# 7. Covers, Stems, Editing
+## 7 / Covers, Stems, Editing
 
 | Tool | Where | Function |
 |---|---|---|
@@ -1082,7 +1082,7 @@ Studio 1.2 (Premier-only update) added four tools:
 
 Order of operations: Warp first, then Remove FX, then Alternates audition. Reversing order produces artifacts.
 
-# 8. Output Specs
+## 8 / Output Specs
 
 | Spec | Value |
 |---|---|
@@ -1095,7 +1095,7 @@ Order of operations: Warp first, then Remove FX, then Alternates audition. Rever
 | Variations per generation | 2 |
 | Approximate cost per generation | ~5 credits |
 
-# 9. API Access
+## 9 / API Access
 
 There is no official public Suno API. Every "Suno API" is reverse-engineered.
 
@@ -1111,7 +1111,7 @@ There is no official public Suno API. Every "Suno API" is reverse-engineered.
 
 Risks: each integration depends on cookies or scraped private endpoints that Suno can break without notice. Terms-of-service exposure runs from both Suno (against scraping) and from end-user redistribution (commercial-rights chain breaks at the cloned-account level). The PiAPI shutdown is the operative precedent for vendor disappearance.
 
-# 10. Plans and What Each Unlocks
+## 10 / Plans and What Each Unlocks
 
 | Plan | Price | Credits | v5.5 | Voices | Custom Models | Studio | Stems | Commercial use | WAV |
 |---|---|---|---|---|---|---|---|---|---|
@@ -1121,7 +1121,7 @@ Risks: each integration depends on cookies or scraped private endpoints that Sun
 
 Monthly subscription credits do not roll over. Purchased top-up credits do not expire but require active subscription. Annual saves ~20%.
 
-# 11. Commercial Use
+## 11 / Commercial Use
 
 Paid-tier subscribers receive a license, not copyright. Verbatim from Suno's terms (Tier 1): Suno assigns its right, title, and interest in output generated during a paid subscription, but "makes no representation or warranty that any copyright will vest in that output."
 
@@ -1145,13 +1145,13 @@ Active litigation as of May 8, 2026:
 
 US Copyright Office position (Thaler v. Perlmutter, D.C. Cir.): purely AI-generated material does not qualify for copyright protection. Writing the prompt does not constitute authorship. Practical effect: revenue can be earned from Suno output, but DMCA takedowns, exclusive licensing, and Content ID may not attach.
 
-# 12. Model Deprecation
+## 12 / Model Deprecation
 
 Per the November 25, 2025 WMG settlement press release: "When the new models launch in 2026, the current models will be deprecated. Moving forward, downloading audio will require a paid account."
 
 Action: export WAV stems for any track intended to be preserved before WMG-licensed successors ship. No exact deprecation date has been published. Free-tier downloads will end; paid-tier monthly download caps will be introduced. Studio sessions tied to deprecated models may not regenerate identically against successors.
 
-# 13. Known Limitations and Failure Modes
+## 13 / Known Limitations and Failure Modes
 
 | Failure | Cause | Mitigation |
 |---|---|---|
@@ -1166,7 +1166,7 @@ Action: export WAV stems for any track intended to be preserved before WMG-licen
 | Reverb stuck on vocal | Generation-baked FX | Run Remove FX in Studio 1.2 |
 | Crackle / clicks in v5.5 | Known artifact | Regenerate; use Studio 1.2 Remove FX experimentally |
 
-# 14. Changelog — v5 → v5.5
+## 14 / Changelog — v5 → v5.5
 
 | Date | Change |
 |---|---|
@@ -1175,7 +1175,7 @@ Action: export WAV stems for any track intended to be preserved before WMG-licen
 | April 11, 2026 | Suno X "Style Stack" prompting framework published |
 | Studio 1.2 (early 2026) | Warp Markers, Remove FX, Alternates, time signatures added |
 
-# 15. Confidence and Gaps
+## 15 / Confidence and Gaps
 
 | Item | Confidence | Note |
 |---|---|---|
@@ -1191,11 +1191,23 @@ Action: export WAV stems for any track intended to be preserved before WMG-licen
 | Custom Model training time 2–5 min | High | Tier 1 from help.suno.com |
 | Crackle / clicks in v5.5 | Tier 3 | User reports; not officially acknowledged |
 
-# 16. Operator Brief
+## 16 / Operator Brief
 
-Suno v5.5 is a personalization layer over the v5 audio engine. The model improved obedience to subtle descriptors but did not change prompt syntax. The Style of Music field accepts up to 1,000 characters and is read as an ordered, weighted tag list — the first two to three tags dominate. The recommended fill is four to seven descriptors across genre, era, mood, instruments, and vocal direction. The Lyrics field accepts up to 5,000 characters and carries song structure via bracket metatags ([Intro], [Verse], [Chorus], [Pre-Chorus], [Post-Chorus], [Bridge], [Outro], [Instrumental]) and vocal delivery via parenthetical cues. Stack three to five tags per section, line-broken, ordered structural → instrumentation → texture/mood → vocal direction. Negative prompting works two ways: inline `no X` in the Style field and the Exclude Styles toggle in Custom Mode > More Options (Pro/Premier). Three Creative Sliders — Weirdness, Style Influence, Audio Influence — map to API floats `weirdnessConstraint`, `styleWeight`, `audioWeight` (0.00–1.00, step 0.01). When a Voice profile is attached, drop vocal descriptors from the Style field and raise Audio Influence to 70–90%. When a Custom Model is selected, drop redundant style descriptors. SFX bracket tags are unreliable; generate ambience in Suno Sounds and layer in Studio. Plans: Free at $0 (50 credits/day, non-commercial, v4.5-all only), Pro at $10/mo (2,500 credits, v5.5, commercial use, WAV, Voices, Custom Models, stems), Premier at $30/mo (10,000 credits, plus Studio). Commercial rights are a license, not vesting copyright; free-tier output is non-commercial and non-retroactive. There is no official public API — kie.ai, sunoapi.org, CometAPI, and gcui-art/suno-api are reverse-engineered. Current models are scheduled for deprecation when WMG-licensed successors ship later in 2026; export WAV now.
+Suno v5.5 is a personalization layer over the v5 audio engine. The model improved obedience to subtle descriptors. Prompt syntax is unchanged.
 
-# 17. Recommendations
+The Style of Music field accepts up to 1,000 characters. It is read as an ordered, weighted tag list. The first two to three tags dominate. Fill four to seven descriptors across genre, era, mood, instruments, and vocal direction.
+
+The Lyrics field accepts up to 5,000 characters. It carries song structure via bracket metatags: `[Intro]`, `[Verse]`, `[Chorus]`, `[Pre-Chorus]`, `[Post-Chorus]`, `[Bridge]`, `[Outro]`, `[Instrumental]`. Vocal delivery rides on parenthetical cues. Stack three to five tags per section, line-broken, ordered structural → instrumentation → texture/mood → vocal direction.
+
+Negative prompting works two ways: inline `no X` in the Style field, and the Exclude Styles toggle in Custom Mode > More Options (Pro/Premier). Three Creative Sliders map to API floats. Weirdness is `weirdnessConstraint`. Style Influence is `styleWeight`. Audio Influence is `audioWeight`. Range 0.00–1.00, step 0.01.
+
+When a Voice profile is attached, drop vocal descriptors from the Style field. Raise Audio Influence to 70–90%. When a Custom Model is selected, drop redundant style descriptors. SFX bracket tags are unreliable; generate ambience in Suno Sounds and layer in Studio.
+
+Plans. Free at $0 covers 50 credits/day, non-commercial, v4.5-all only. Pro at $10/mo covers 2,500 credits, v5.5, commercial use, WAV, Voices, Custom Models, and stems. Premier at $30/mo covers 10,000 credits plus Studio.
+
+Commercial rights are a license, not vesting copyright. Free-tier output is non-commercial and non-retroactive. There is no official public API. Current models are scheduled for deprecation when WMG-licensed successors ship later in 2026. Export WAV now.
+
+## 17 / Recommendations
 
 Now (this week)
 - Migrate all Style of Music inputs to the four-to-seven descriptor format. Front-load genre. Audit existing prompts for tag count above seven and below four; rewrite both directions.
@@ -1223,7 +1235,7 @@ Benchmarks that change the recommendation
 - Slider API floats change beyond 0.00–1.00 → re-test all genre profiles.
 - v6 announcement → freeze production work on v5.5, begin migration testing.
 
-# 18. Caveats
+## 18 / Caveats
 
 Slider profiles by genre are community-derived (Tier 3, JackRighteous and SunoStyles); Suno publishes only the qualitative Safe / Chaos / Loose / Strong scaling. BPM drift, crackle artifacts, and SFX failure rates are community-reported and not officially acknowledged.
 
