@@ -24,7 +24,7 @@ sources:
 
 # Suno v5.5 — Operator Reference
 
-The mainstream consensus is that Suno v5.5 is a personalization layer bolted onto v5, not a new audio engine. The prompting surface is where the unrealized control lives. Treat the Style of Music field, the Lyrics field, and the Creative Sliders as three independent control planes. Tracks improve when each plane carries its own job and stops carrying the others.
+The mainstream consensus is that Suno v5.5 is a personalization layer bolted onto v5, not a new audio engine. The prompting surface is where most of the unrealized control lives. Treat the Style of Music field, the Lyrics field, and the Creative Sliders as three independent control planes. Tracks improve when each plane carries its own job and stops carrying the others.
 
 Released March 26, 2026. Successor to v5 (chirp-crow). Internal model identifier `V5_5`. Pro and Premier tiers; free tier remains on v4.5-all. Surfaces: Web, iOS, Android, Suno Studio (Premier).
 
@@ -1205,7 +1205,7 @@ When a Voice profile is attached, drop vocal descriptors from the Style field. R
 
 Plans. Free at $0 covers 50 credits/day, non-commercial, v4.5-all only. Pro at $10/mo covers 2,500 credits, v5.5, commercial use, WAV, Voices, Custom Models, and stems. Premier at $30/mo covers 10,000 credits plus Studio.
 
-Commercial rights are a license, not vesting copyright. Free-tier output is non-commercial and non-retroactive. There is no official public API. Current models are scheduled for deprecation when WMG-licensed successors ship later in 2026. Export WAV now.
+Commercial rights are a license, not vesting copyright. Free-tier output is non-commercial and non-retroactive. There is no official public API; kie.ai, sunoapi.org, CometAPI, and gcui-art/suno-api are reverse-engineered. Current models are scheduled for deprecation when WMG-licensed successors ship later in 2026. Export WAV now.
 
 ## 17 / Recommendations
 
