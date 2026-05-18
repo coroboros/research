@@ -16,7 +16,7 @@ Cross-topic index of articles and notes in this repo. Organized by topic, regard
 
 ## Tooling & developer experience
 
-*(none yet)*
+- **Article** · [MCP Is Not the Problem](articles/mcp-is-not-the-problem.md) — 2026-05-18 — `mcp` `claude-code` `agent-skills` `cli` `code-mode` `context-window` `tooling`
 
 ---
 
