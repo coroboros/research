@@ -1,6 +1,7 @@
 ---
 title: "Award-Winning Websites — 2025–2030 Reference"
 date: "2026-04-13"
+revision: "2026-07-30"
 author: "Coroboros"
 tags: ["web-design", "ui-design", "ux-design", "awwwards", "fwa", "cssda", "design-systems", "design-archetypes", "minimalism", "brutalism", "editorial-design", "bento-grid", "animation", "motion-design", "scroll-driven-animation", "gsap", "lenis", "view-transitions", "webgl", "webgpu", "threejs", "react-three-fiber", "shaders", "typography", "variable-fonts", "kinetic-typography", "css", "oklch", "container-queries", "dark-mode", "performance", "core-web-vitals", "accessibility", "prefers-reduced-motion", "design-trends-2026"]
 sources:
@@ -28,7 +29,7 @@ sources:
   - "https://14islands.com"
   - "https://monogrid.com"
   - "https://www.mediamonks.com"
-  - "https://offbrand.studio"
+  - "https://www.itsoffbrand.com"
   - "https://rejouice.com"
   - "https://threejs.org"
   - "https://gsap.com"
@@ -59,7 +60,7 @@ sources:
 
 The websites that win Awwwards Site of the Year, FWA, and CSS Design Awards share a measurable formula. Signature visual identity built on modern CSS foundations. Purposeful scroll choreography executed with `GSAP` and `Lenis`. Performance budgets that hold 60fps on mid-range devices. Everything else is decoration.
 
-This document is the reference. Eight archetypes. One canonical winner per archetype. The technical foundations beneath them.
+Eight archetypes. One canonical winner per archetype. The technical foundations beneath them.
 
 ---
 
@@ -119,9 +120,9 @@ Use case: creative agencies, indie tech, streetwear, design conferences.
 **Site.** FlowFest 2025
 **URL.** `flowfest.co.uk`
 **Award.** Awwwards Site of the Day, July 29, 2025 (score 7.36) + GSAP Site of the Week
-**Studio.** None — community build. Credited collaborators: `Dennis Snellenberg`, `Isabel Edwards`, `Osmo`, `Ilja van Eck`. Animation brought to life by Dennis and Ilja from `Osmo`.
+**Studio.** None — community build. Credited collaborators: Dennis Snellenberg, Isabel Edwards, Osmo, Ilja van Eck. Animation by Dennis and Ilja from Osmo.
 
-The honest answer in this archetype. No SOTM or SOTY winner in the 2024–2026 window cleanly hits the saturated Gumroad-style neo-brutalist profile. FlowFest 2025 carries a flat `#F3A20F`/`#F97028` palette, chunky display type, and a raw illustrative aesthetic — the closest credentialed match. Substitutable upgrade: `animejs.com` at SOTM tier carries the brutalist palette in a more austere monochrome flavor, but it serves the Bento archetype better.
+No SOTM or SOTY winner in the 2024–2026 window cleanly hits the saturated Gumroad-style neo-brutalist profile; FlowFest 2025 is the closest credentialed match. It carries a flat `#F3A20F`/`#F97028` palette, chunky display type, and a raw illustrative aesthetic. At SOTM tier, `animejs.com` carries the brutalist palette in a more austere monochrome flavor, but serves the Bento archetype better.
 
 ---
 
@@ -157,7 +158,7 @@ Use case: media, fashion, cultural institutions, luxury e-commerce.
 
 **Site.** Siena Film Foundation
 **URL.** `siena.film`
-**Award.** Awwwards Site of the Month, April 2025
+**Award.** Awwwards Site of the Month, March 2025
 **Studio.** Undisclosed in the public Awwwards entry.
 
 The strongest editorial reference in the 2024–2026 window. Awwwards' own case study describes its design as editorial typography in a minimalist filmic structure. Grotesque-serif voice, cinematic filmstrip slider, vintage-poster type, dual-menu editorial navigation, parallax photo-driven storytelling. Translates the magazine grammar of a print monograph into the browser more cleanly than any 2025 SOTY contender.
@@ -180,7 +181,7 @@ Use case: creative agencies, entertainment, music festivals, Gen Z brands.
 
 **Site.** Ponpon Mania
 **URL.** `ponpon-mania.com`
-**Award.** Awwwards Site of the Month, October 2025 (+ Developer Award, SOTY 2025 nominee)
+**Award.** Awwwards Site of the Month, October 2025 (+ Developer Award; a SOTY 2025 contender, unverified)
 **Studio.** Independent project.
 
 An interactive comic about a megalomaniac sheep DJ. Built with `WebGL`, `GSAP`, `Matter.js` physics, and `Lenis`. Every hallmark of the archetype is dialed up: oversized animated panels, kinetic illustrated typography, overlapping comic compositions, saturated multi-color palette, music-player navigation metaphor. The reference for designers who think bold means timid.
@@ -203,10 +204,10 @@ Use case: automotive, luxury, entertainment, gaming, museums.
 
 **Site.** Lando Norris
 **URL.** `landonorris.com`
-**Award.** Awwwards **Site of the Year 2025**
+**Award.** Awwwards Site of the Day, November 17, 2025 (8.18); Site of the Year 2025 per the OFF+BRAND case study, unverified against the Awwwards annual page
 **Studio.** OFF+BRAND
 
-The highest credential in this entire reference. Webflow as foundation. WebGL-powered 3D — rotating helmet, 3D scenes — combined with Rive motion graphics, GSAP scroll-driven cinematic sequences, full-bleed video, and lime-on-dark accents. Scroll-controlled narrative, 3D hero, cinematic transitions, automotive subject. Every immersive hallmark anchored in one site. Substitutable peer: `messenger.network` (Awwwards Developer Site of the Year 2025) — a Three.js miniature-planet experience, darker and moodier.
+The strongest immersive build in this reference. Webflow as foundation. WebGL-powered 3D — rotating helmet, 3D scenes — combined with Rive motion graphics, GSAP scroll-driven cinematic sequences, full-bleed video, and lime-on-dark accents. Scroll-controlled narrative, 3D hero, cinematic transitions, automotive subject. Every immersive hallmark anchored in one site. Substitutable peer: `messenger.abeto.co` (Awwwards SOTD 10 Nov 2025 + Developer Award 8.21; the annual Developer Site of the Year title is unverified) — a Three.js miniature-planet experience, darker and moodier.
 
 ---
 
@@ -249,7 +250,7 @@ Use case: high-end fashion, luxury hotels, fine jewelry, premium automotive, wea
 
 **Site.** Cartier Watches & Wonders 2025
 **URL.** `cartier-waw-0225.dev.60fps.fr`
-**Award.** Awwwards Site of the Month, August 2025 (+ Developer Award)
+**Award.** Awwwards Site of the Day, August 18, 2025 — 7.64 (+ Developer Award)
 **Studio.** Immersive Garden, with `60fps` and `Mooders`, for Cartier.
 
 Built around Cartier's Geneva pavilion. Six contemplative 3D alcove universes around iconic timepieces. Slow tasteful motion. Refined typography. Hidden gestures. Bespoke cinematic soundscape. The platonic case for quiet-luxury restraint with sumptuous detail. Note the URL: live on the build studio's `dev.60fps.fr` subdomain rather than a Cartier-owned domain — unusual, but the canonical Awwwards-referenced location.
@@ -662,7 +663,7 @@ FWA (500+ jury members) rewards unconventional, experimental work more aggressiv
 
 ## 7 / Studios That Win
 
-`Locomotive` (Montreal) won Awwwards Agency of the Year seven consecutive times through 2025. Nine to twelve Sites of the Day annually since 2018. Created `Locomotive Scroll`, the open-source smooth scrolling library, now rebuilt on `Lenis` for v5. Stack: custom front-end with `Locomotive Scroll`, `Lenis`, `GSAP`. Competitive advantage: small team, craft culture, every project treated as award-worthy.
+`Locomotive` (Montreal) won Awwwards Agency of the Year in consecutive years — streak length unverified. Nine to twelve Sites of the Day annually since 2018. Created `Locomotive Scroll`, the open-source smooth scrolling library, now rebuilt on `Lenis` for v5. Stack: custom front-end with `Locomotive Scroll`, `Lenis`, `GSAP`. Competitive advantage: small team, craft culture, every project treated as award-worthy.
 
 `Active Theory` (LA + Amsterdam). Premier WebGL/3D studio. Emmy nominations. Signature: immersive cinematic WebGL on pitch-black canvases with XXL `Monument Grotesk` headlines. Built `Hydra`, a proprietary 3D engine evolved since 2012. Built `Aura`, a platform running WebGL natively across eight platforms. Philosophy: WebGL wins when it deepens user involvement. Fog instead of textures. Light instead of detail. Achieves `LCP ~1.3s` despite heavy shader work — lazy-loaded videos via `requestIdleCallback`, Draco-compressed meshes.
 

@@ -4,7 +4,8 @@ Cross-topic index of articles and notes in this repo. Organized by topic, regard
 
 ## Web design & performance
 
-- **Article** · [Award-Winning Websites — 2025–2030 Reference](articles/award-winning-websites-2025-2030/award-winning-websites-2025-2030.md) — 2026-04-13 — `web-design` `awwwards` `fwa` `cssda` `animation` `gsap` `webgl` `webgpu` `typography` `css` `oklch` `performance` `accessibility`
+- **Article** · [Award-Winning Websites — 2025–2030 Reference](articles/award-winning-websites-2025-2030/award-winning-websites-2025-2030.md) — 2026-04-13 (rev. 2026-07-28) — `web-design` `awwwards` `fwa` `cssda` `animation` `gsap` `webgl` `webgpu` `typography` `css` `oklch` `performance` `accessibility`
+- **Corpus** · [Award Research Corpus](articles/award-winning-websites-2025-2030/README.md) — 2026-07-30 — `web-design` `awwwards` `design-archetypes` `motion-design` `typography` `css` — 34 reports: live winner reads, per-archetype research, cross-corpus analysis
 
 ## Stack & infrastructure
 
