@@ -1,6 +1,7 @@
 ---
 title: "Award-Winning Websites — 2025–2030 Reference"
 date: "2026-04-13"
+revision: "2026-08-29"
 author: "Coroboros"
 tags: ["web-design", "ui-design", "ux-design", "awwwards", "fwa", "cssda", "design-systems", "design-archetypes", "minimalism", "brutalism", "editorial-design", "bento-grid", "animation", "motion-design", "scroll-driven-animation", "gsap", "lenis", "view-transitions", "webgl", "webgpu", "threejs", "react-three-fiber", "shaders", "typography", "variable-fonts", "kinetic-typography", "css", "oklch", "container-queries", "dark-mode", "performance", "core-web-vitals", "accessibility", "prefers-reduced-motion", "design-trends-2026"]
 sources:
@@ -28,7 +29,7 @@ sources:
   - "https://14islands.com"
   - "https://monogrid.com"
   - "https://www.mediamonks.com"
-  - "https://offbrand.studio"
+  - "https://www.itsoffbrand.com"
   - "https://rejouice.com"
   - "https://threejs.org"
   - "https://gsap.com"
@@ -43,7 +44,7 @@ sources:
   - "https://developer.chrome.com/docs/web-platform/view-transitions"
   - "https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API"
   - "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations"
-  - "https://web.dev/articles/speculation-rules"
+  - "https://developer.chrome.com/docs/web-platform/prerender-pages"
   - "https://www.joshwcomeau.com/css/full-bleed/"
   - "https://www.joshwcomeau.com/css/subgrid/"
   - "https://tympanus.net/codrops/"
@@ -53,15 +54,20 @@ sources:
   - "https://www.nngroup.com/articles/sticky-headers/"
   - "https://www.nngroup.com/articles/neobrutalism/"
   - "https://web.dev/vitals/"
+  - "https://www.awwwards.com/annual-awards/winners"
+  - "https://www.awwwards.com/siena-film-foundation-case-study.html"
+  - "https://greenspector.com/en/analysis_sites_nominated_mobile_excellence_awwwards/"
+  - "https://support.google.com/adsense/answer/7450973"
+  - "https://www.ftc.gov/news-events/news/press-releases/2025/04/ftc-approves-final-order-requiring-accessibe-pay-1-million"
+  - "https://www.webgpu.com/showcase/cartier-watches-and-wonders-immersive-garden/"
 ---
 
 # Award-Winning Websites — 2025–2030 Reference
 
-The websites that win Awwwards Site of the Year, FWA, and CSS Design Awards share a measurable formula. Signature visual identity built on modern CSS foundations. Purposeful scroll choreography executed with `GSAP` and `Lenis`. Performance budgets that hold 60fps on mid-range devices. Everything else is decoration.
+The websites that win Awwwards Site of the Year, FWA, and CSS Design Awards share a measurable formula: a signature visual identity built on modern CSS foundations, and scroll choreography with a purpose, executed with `GSAP` and `Lenis` inside a performance budget that holds 60fps on mid-range devices. Everything else is decoration.
 
-This document is the reference. Eight archetypes. One canonical winner per archetype. The technical foundations beneath them.
+Eight archetypes. One canonical winner per archetype. The technical foundations beneath them.
 
----
 
 ## 1 / The Eight Archetypes
 
@@ -71,7 +77,7 @@ Award-winning sites cluster into recognizable archetypes. Each demands different
 
 Extreme whitespace. Two to three colors maximum. Every element justifies its existence.
 
-Typography carries the design: `Inter`, `Suisse Int'l`, `Neue Haas Grotesk`, or `Söhne` at 48–120px headlines, light weights for elegance. Color holds in warm neutrals (`#FAFAF5`, `#E8E4DF`, `#2D2D2D`) or cool neutrals (`#F5F5F0`, `#0F172A`) with a single accent. Animation philosophy is restraint — fade-ins (opacity 0→1, translateY 20px→0, 0.6–0.8s), `Lenis` smooth scroll, `GSAP` Flip for transitions.
+Typography carries the design: `Inter`, `Suisse Int'l`, `Neue Haas Grotesk`, or `Söhne` at 48–120px headlines, light weights for elegance. Color holds in warm neutrals (`#FAFAF5`, `#E8E4DF`, `#2D2D2D`) or cool neutrals (`#F5F5F0`, `#0F172A`) with a single accent. Animation philosophy is restraint: fade-ins (opacity 0→1, translateY 20px→0, 0.6–0.8s), `Lenis` smooth scroll, `GSAP` Flip for transitions.
 
 Use case: SaaS, luxury brands, architecture studios, high-end portfolios.
 
@@ -95,18 +101,17 @@ Use case: SaaS, luxury brands, architecture studios, high-end portfolios.
 
 **Site.** Terminal Industries
 **URL.** `terminal-industries.com`
-**Award.** Awwwards Site of the Month, September 2025 (+ Developer Award)
+**Award.** Awwwards Site of the Day, 3 Sep 2025 (7.68) + Site of the Month, September 2025 (+ Developer Award 7.89); CSS Design Awards Website of the Day, 4 Aug 2025 (8.42)
 **Studio.** REJOUICE® and PROPAGANDE
 
-Terminal Industries operates a B2B yard-management OS. The site is the textbook minimalist reference for 2025: two-color system, type-driven, generous whitespace, scroll-driven storytelling. One of the rare logistics-SaaS sites to crack SOTM tier — proof that restraint outperforms decoration in a category prone to overdesign.
+Terminal Industries operates a B2B yard-management OS. The site is the textbook minimalist reference for 2025: two-color system, type-driven, generous whitespace, scroll-driven storytelling. One of the rare logistics-SaaS sites to crack SOTM tier, proof that restraint outperforms decoration in a category prone to overdesign.
 
----
 
 ### 1.2 / Brutalist / Neo-Brutalist
 
 Deliberate rejection of polish. Thick black borders (2–4px). Hard-edged box shadows (4–8px offset, solid black). Flat colors. Zero gradients.
 
-Typography is the design. `Monument Extended`, `Archivo Black`, `Space Mono` at 80–200px+. High-saturation accents against black and white — Gumroad's hot pink (`#FF90E8`), neon greens (`#00FF41`), clashing primaries. Animations include glitch effects, kinetic type that bounces and rotates, intentionally jarring transitions.
+Typography is the design. `Monument Extended`, `Archivo Black`, `Space Mono` at 80–200px+. High-saturation accents against black and white: Gumroad's hot pink (`#FF90E8`), neon greens (`#00FF41`), clashing primaries. Animations include glitch effects, kinetic type that bounces and rotates, intentionally jarring transitions.
 
 Use case: creative agencies, indie tech, streetwear, design conferences.
 
@@ -118,18 +123,17 @@ Use case: creative agencies, indie tech, streetwear, design conferences.
 
 **Site.** FlowFest 2025
 **URL.** `flowfest.co.uk`
-**Award.** Awwwards Site of the Day, July 29, 2025 (score 7.36) + GSAP Site of the Week
-**Studio.** None — community build. Credited collaborators: `Dennis Snellenberg`, `Isabel Edwards`, `Osmo`, `Ilja van Eck`. Animation brought to life by Dennis and Ilja from `Osmo`.
+**Award.** Awwwards Site of the Day, 29 Jul 2025 (score 7.36) + GSAP Site of the Week
+**Studio.** None; community build. Credited collaborators: Dennis Snellenberg, Isabel Edwards, Osmo, Ilja van Eck. Animation by Dennis and Ilja from Osmo.
 
-The honest answer in this archetype. No SOTM or SOTY winner in the 2024–2026 window cleanly hits the saturated Gumroad-style neo-brutalist profile. FlowFest 2025 carries a flat `#F3A20F`/`#F97028` palette, chunky display type, and a raw illustrative aesthetic — the closest credentialed match. Substitutable upgrade: `animejs.com` at SOTM tier carries the brutalist palette in a more austere monochrome flavor, but it serves the Bento archetype better.
+No SOTM or SOTY winner in the 2024–2026 window cleanly hits the saturated Gumroad-style neo-brutalist profile; FlowFest 2025 is the closest credentialed match. Its shipped CSS declares two palettes in `:root`, the mango, orange, and yellow of the illustrations and rainbow strokes (Awwwards lists `#F3A20F` / `#F97028` as the site's palette) and the pink, off-white, and off-black of button fills and ink, all seven tokens listed in [`archetypes/brutalist.md`](archetypes/brutalist.md#corpus). Chunky display type and a raw illustrative aesthetic complete it. At SOTM tier, `animejs.com` carries the brutalist palette in a more austere monochrome flavor, but serves the Bento archetype better.
 
----
 
 ### 1.3 / Editorial / Magazine
 
 Defining characteristic: serif headlines paired with sans-serif body. `GT Sectra` or `Playfair Display` at 60–120px over `Inter` or `Neue Haas Grotesk` at 16–18px.
 
-Multi-column grids — six to twelve columns — with asymmetric widths, pull quotes breaking flow, full-bleed hero images alternating with text-heavy sections. Image treatment uses high-contrast black-and-white, duotone, or desaturation with one accent color. Serifs returned hard in 2025–2026. Burberry's switch back to serif signaled the shift.
+Multi-column grids (six to twelve columns) with asymmetric widths, pull quotes breaking flow, full-bleed hero images alternating with text-heavy sections. Image treatment uses high-contrast black-and-white, duotone, or desaturation with one accent color. Serifs returned hard in 2025–2026. Burberry's switch back to serif signaled the shift.
 
 Use case: media, fashion, cultural institutions, luxury e-commerce.
 
@@ -157,16 +161,15 @@ Use case: media, fashion, cultural institutions, luxury e-commerce.
 
 **Site.** Siena Film Foundation
 **URL.** `siena.film`
-**Award.** Awwwards Site of the Month, April 2025
-**Studio.** Undisclosed in the public Awwwards entry.
+**Award.** Awwwards Site of the Day, 18 Mar 2025 (7.9) + Site of the Month, March 2025 (+ Developer Award 7.51)
+**Studio.** Niccolò Miranda (design and technical direction), G-NS Studio (production), Federico Valla (development), per the [Awwwards case study](https://www.awwwards.com/siena-film-foundation-case-study.html).
 
 The strongest editorial reference in the 2024–2026 window. Awwwards' own case study describes its design as editorial typography in a minimalist filmic structure. Grotesque-serif voice, cinematic filmstrip slider, vintage-poster type, dual-menu editorial navigation, parallax photo-driven storytelling. Translates the magazine grammar of a print monograph into the browser more cleanly than any 2025 SOTY contender.
 
----
 
 ### 1.4 / Bold / Maximal
 
-Every viewport inch filled with organized chaos. Layered compositions mixing photography, illustration, and 3D. Four to six colors at high saturation. Neon accents — electric lime (`#CCFF00`), hot magenta (`#FF00FF`).
+Every viewport inch filled with organized chaos. Layered compositions mixing photography, illustration, and 3D. Four to six colors at high saturation. Neon accents: electric lime (`#CCFF00`), hot magenta (`#FF00FF`).
 
 Typography functions as art: 100–300px+ display sizes, variable fonts animated between weight and width, kinetic type splitting and reforming via `GSAP SplitText`. Animation is constant — parallax, scroll-triggered sequences, staggered reveals at 200–400ms offsets. Fonts: `Monument Extended`, `Clash Display`, `Satoshi`.
 
@@ -180,16 +183,15 @@ Use case: creative agencies, entertainment, music festivals, Gen Z brands.
 
 **Site.** Ponpon Mania
 **URL.** `ponpon-mania.com`
-**Award.** Awwwards Site of the Month, October 2025 (+ Developer Award, SOTY 2025 nominee)
+**Award.** Awwwards Site of the Month, October 2025 (+ Developer Award)
 **Studio.** Independent project.
 
 An interactive comic about a megalomaniac sheep DJ. Built with `WebGL`, `GSAP`, `Matter.js` physics, and `Lenis`. Every hallmark of the archetype is dialed up: oversized animated panels, kinetic illustrated typography, overlapping comic compositions, saturated multi-color palette, music-player navigation metaphor. The reference for designers who think bold means timid.
 
----
 
 ### 1.5 / Immersive / Cinematic
 
-Full-screen video heroes. WebGL 3D environments. Dark backgrounds — `#0A0A0A` to `#1A1A2E` — that make colors carry. Scroll-controlled video playback scrubs frames against scroll position.
+Full-screen video heroes. WebGL 3D environments. Dark backgrounds (`#0A0A0A` to `#1A1A2E`) that make colors carry. Scroll-controlled video playback scrubs frames against scroll position.
 
 `Three.js` dominates 3D. `GSAP ScrollTrigger` choreographs pinned sections with internal animation timelines. Spatialized audio via the Web Audio API completes the sensory layer. Glow effects via radial gradients, bloom, and lens-flare shaders create dramatic lighting.
 
@@ -203,16 +205,15 @@ Use case: automotive, luxury, entertainment, gaming, museums.
 
 **Site.** Lando Norris
 **URL.** `landonorris.com`
-**Award.** Awwwards **Site of the Year 2025**
+**Award.** Awwwards Site of the Day, 17 Nov 2025 (8.18); Site of the Year 2025 and Site of the Year Users' Choice 2025 on the [Awwwards annual winners page](https://www.awwwards.com/annual-awards/winners)
 **Studio.** OFF+BRAND
 
-The highest credential in this entire reference. Webflow as foundation. WebGL-powered 3D — rotating helmet, 3D scenes — combined with Rive motion graphics, GSAP scroll-driven cinematic sequences, full-bleed video, and lime-on-dark accents. Scroll-controlled narrative, 3D hero, cinematic transitions, automotive subject. Every immersive hallmark anchored in one site. Substitutable peer: `messenger.network` (Awwwards Developer Site of the Year 2025) — a Three.js miniature-planet experience, darker and moodier.
+The strongest immersive build in this reference. Webflow as foundation. WebGL-powered 3D (rotating helmet, 3D scenes) combined with Rive motion graphics, GSAP scroll-driven cinematic sequences, full-bleed video, and lime-on-dark accents. Scroll-controlled narrative, 3D hero, cinematic transitions, automotive subject. Every immersive hallmark anchored in one site. Substitutable peer: `messenger.abeto.co` (Awwwards SOTD 10 Nov 2025 + Developer Award 8.21; Developer Site of the Year 2025 on the same annual winners page), a Three.js miniature-planet experience, darker and moodier.
 
----
 
 ### 1.6 / Experimental / Art-Directed
 
-No template. No repeatable pattern. Each site is bespoke. Mixed media combining photography, illustration, 3D, and generative art. Unconventional navigation — spatial exploration, physics-based interfaces, playground navigation. Creative coding with `p5.js`, custom GLSL shaders, noise functions, particle systems.
+No template. No repeatable pattern. Each site is bespoke. Mixed media combining photography, illustration, 3D, and generative art. Unconventional navigation: spatial exploration, physics-based interfaces, playground navigation. Creative coding with `p5.js`, custom GLSL shaders, noise functions, particle systems.
 
 Use case: creative developer portfolios, art institutions, experimental campaigns.
 
@@ -225,19 +226,18 @@ Use case: creative developer portfolios, art institutions, experimental campaign
 **Site.** Bruno's Portfolio
 **URL.** `bruno-simon.com`
 **Award.** Awwwards Site of the Month, January 2026 (+ Developer Award, Portfolio Honors December 2025)
-**Studio.** None — solo creative developer (Bruno Simon).
+**Studio.** None; solo creative developer (Bruno Simon).
 
 Navigation is performed by driving a vehicle across a hand-coded `Three.js` landscape. Conventional grids, pages, and menus are abandoned in favor of spatialized audio, custom physics-based interactions, and unique per-area rooms. The ceiling of craft for the archetype. A solo creative developer outranking studios.
 
----
 
 ### 1.7 / Corporate Luxury
 
 Quiet luxury. Sophisticated restraint. Generosity of whitespace signals exclusivity.
 
-Custom serifs with sharp edges for headlines — `Didot`, `Bodoni`, `GT Sectra`. Refined sans-serifs for body — `Apercu`, `Founders Grotesk`. Color palettes rest on neutral foundations: warm whites (`#F8F5F0`), muted golds (`#C5A572`), jewel tones (deep emerald `#006D5B`, sapphire `#1B365D`), Pantone 2025's Mocha Mousse (`#A47764`).
+Custom serifs with sharp edges for headlines: `Didot`, `Bodoni`, `GT Sectra`. Refined sans-serifs for body: `Apercu`, `Founders Grotesk`. Color palettes rest on neutral foundations: warm whites (`#F8F5F0`), muted golds (`#C5A572`), jewel tones (deep emerald `#006D5B`, sapphire `#1B365D`), Pantone 2025's Mocha Mousse (`#A47764`).
 
-Animations use long easing curves — `cubic-bezier(0.16, 1, 0.3, 1)` over 1–1.5s. Hover states limited to gentle opacity shifts and 1.05 scale.
+Animations use long easing curves, `cubic-bezier(0.16, 1, 0.3, 1)` over 1–1.5s. Hover states limited to gentle opacity shifts and 1.05 scale.
 
 Use case: high-end fashion, luxury hotels, fine jewelry, premium automotive, wealth management.
 
@@ -249,18 +249,17 @@ Use case: high-end fashion, luxury hotels, fine jewelry, premium automotive, wea
 
 **Site.** Cartier Watches & Wonders 2025
 **URL.** `cartier-waw-0225.dev.60fps.fr`
-**Award.** Awwwards Site of the Month, August 2025 (+ Developer Award)
+**Award.** Awwwards Site of the Day, 18 Aug 2025 (7.64) + Site of the Month, August 2025 (+ Developer Award 7.55); CSS Design Awards Website of the Day, 16 Jul 2025 (8.39); FWA of the Day, 7 Jul 2025
 **Studio.** Immersive Garden, with `60fps` and `Mooders`, for Cartier.
 
-Built around Cartier's Geneva pavilion. Six contemplative 3D alcove universes around iconic timepieces. Slow tasteful motion. Refined typography. Hidden gestures. Bespoke cinematic soundscape. The platonic case for quiet-luxury restraint with sumptuous detail. Note the URL: live on the build studio's `dev.60fps.fr` subdomain rather than a Cartier-owned domain — unusual, but the canonical Awwwards-referenced location.
+Built around Cartier's Geneva pavilion. Six contemplative 3D alcove universes (stated, webgpu.com) around iconic timepieces. Slow tasteful motion. Refined typography. Hidden gestures. Bespoke cinematic soundscape. The platonic case for quiet-luxury restraint with sumptuous detail. Three Watches & Wonders editions carry the name (2023, 2025, 2026); this is the 2025 edition. The site lives on the build studio's `dev.60fps.fr` subdomain rather than a Cartier-owned domain; that is the location the Awwwards entry links.
 
----
 
 ### 1.8 / Bento / Card-Based
 
 Modular asymmetric tiles. Inspired by Japanese bento boxes, popularized by Apple keynotes. Consistent 12–20px border-radius. Equal gutter widths (12–24px). Large hero cards (2×2 spans) for primary features. Each tile is a self-contained information unit with its own visual treatment. Container queries enable self-aware tiles that adapt to their own dimensions.
 
-The archetype is reaching saturation. Many designers report bento fatigue. Still highly functional for SaaS product pages.
+The archetype is reaching saturation; bento fatigue has set in. Still highly functional for SaaS product pages.
 
 Use case: SaaS, product launches, feature comparison pages.
 
@@ -288,12 +287,11 @@ Use case: SaaS, product launches, feature comparison pages.
 
 **Site.** Anime.js v4
 **URL.** `animejs.com`
-**Award.** Awwwards Site of the Month, May 2025 (+ Developer Award, Product Honors)
-**Studio.** None — open-source library project led by Julian Garnier.
+**Award.** Awwwards Site of the Day, 6 May 2025 (7.62) + Site of the Month, May 2025 (+ Developer Award 7.84, Product Honors)
+**Studio.** None; open-source library project led by Julian Garnier.
 
-A canonical modern bento layout. A modular asymmetric grid of self-contained feature cards, each demoing one capability — scroll scrubber, lightweight modular core, complete animator's toolbox, layout-grid demos that morph between bento configurations. Consistent corner radii. Neutral palette. The Notion/Linear/Apple-iOS lineage executed at SOTM tier. The site is genuinely a hybrid — brutalist palette, bento structure — which is why some sources tag it brutalist. The structural logic is bento. Use it as the bento reference.
+A canonical modern bento layout. A modular asymmetric grid of self-contained feature cards, each demoing one capability — scroll scrubber, lightweight modular core, complete animator's toolbox, layout-grid demos that morph between bento configurations. Consistent corner radii. Neutral palette. The Notion/Linear/Apple-iOS lineage executed at SOTM tier. The site is a hybrid (brutalist palette, bento structure), hence the occasional brutalist tag. The structural logic is bento. Use it as the bento reference.
 
----
 
 ## 2 / Core UI Foundations
 
@@ -314,7 +312,15 @@ Award winners use fluid typography with `clamp()`. Breakpoint-based sizing is ob
 
 Variable fonts are the technical edge. A single file contains all weights, widths, styles. Real-time animation of `font-variation-settings` on hover and scroll becomes possible. Dominant variable fonts on Awwwards winners: `PP Neue Montreal`, `ABC Diatype`, `Inter`, `GT Flexa`, `Fragment`. For serif display: `GT Super`, `GT Sectra`, `Editorial New`. For extended display: `Monument Extended`, `Sharp Grotesk`, `Druk Wide`.
 
-Five pairing strategies: contrast pairing (serif + sans with dramatic difference), outline mixed with solid weights, weight extremes (ultra-thin body with ultra-bold display), monospace accents for technical detail, editorial mixing of three or more typefaces in Swiss-inspired layouts.
+Five pairing strategies:
+
+| Strategy | Pairing |
+|---|---|
+| Contrast pairing | Serif + sans with dramatic difference |
+| Outline + solid | Outline weights mixed with solid weights |
+| Weight extremes | Ultra-thin body with ultra-bold display |
+| Monospace accents | Monospace for technical detail |
+| Editorial mixing | Three or more typefaces in Swiss-inspired layouts |
 
 For kinetic typography, `GSAP SplitText` is the standard. Free since Webflow's acquisition of GSAP. The v3.13+ syntax handles resize and font loading:
 
@@ -349,9 +355,17 @@ OKLCH is the defining color advancement in modern CSS. Perceptually uniform mani
 .muted   { background: oklch(from var(--brand) l calc(c - 0.08) h); }
 ```
 
-Dark mode shifted from trend to baseline. 82% of mobile users prefer it. Award-winning implementations never use pure black or pure white. Backgrounds: rich dark grays (`#121212`, `#1E1E1E`) or deep navies (`#14213D`). Text: off-whites (`#E0E0E0`).
+Dark mode shifted from trend to baseline. Award-winning implementations never use pure black or pure white. Backgrounds: rich dark grays (`#121212`, `#1E1E1E`) or deep navies (`#14213D`). Text: off-whites (`#E0E0E0`).
 
-Five dominant color strategies on Awwwards winners: dark base + single saturated accent (most common), monochromatic depth via OKLCH lightness variations, earthy muted pastels for sustainability brands, neon micro-glow accents on dark surfaces, OKLCH-interpolated multi-hue gradients replacing flat sRGB gradients.
+Five dominant color strategies on Awwwards winners:
+
+| Strategy | Treatment |
+|---|---|
+| Dark base + single saturated accent | The most common |
+| Monochromatic depth | OKLCH lightness variations of one hue |
+| Earthy muted pastels | Sustainability brands |
+| Neon micro-glow accents | On dark surfaces |
+| OKLCH-interpolated multi-hue gradients | Replacing flat sRGB gradients |
 
 ### 2.3 / Layout — broken grids, subgrid, full-bleed
 
@@ -366,7 +380,7 @@ CSS Grid enables faithful reproduction of editorial poster compositions. Asymmet
 .overlay-text { grid-column: 4 / 11; grid-row: 4 / 6; z-index: 2; }
 ```
 
-CSS Subgrid is supported in all major browsers. Nested elements inherit parent grid tracks. Essential for card layouts where titles and content must align across cards. The Josh W. Comeau full-bleed pattern remains the standard for long-form content with breakout sections.
+CSS Subgrid is available in current browsers; whether to ship it unguarded or behind `@supports` is left unresolved in [`foundations/modern-web-code-baseline.md`](foundations/modern-web-code-baseline.md). Nested elements inherit parent grid tracks. Essential for card layouts where titles and content must align across cards. The Josh W. Comeau full-bleed pattern remains the standard for long-form content with breakout sections.
 
 ### 2.4 / Whitespace as weapon
 
@@ -396,13 +410,12 @@ section { padding-block: var(--space-xl); }
 
 `mix-blend-mode: difference` on text overlaying images creates dynamic visual effects with one CSS property. Video backgrounds use muted autoplay with `object-fit: cover`. Under 10–15 seconds. Compressed below 5MB. `prefers-reduced-motion` swaps to static poster images.
 
----
 
 ## 3 / Interaction Design — Animation as Storytelling
 
 ### 3.1 / Page transitions enter the native era
 
-The View Transitions API became Baseline Newly Available in October 2025. The most significant native page transition advancement to date. Cross-document MPA transitions require one CSS line:
+Same-document View Transitions became Baseline Newly Available on 14 Oct 2025, when Firefox 144 completed interop; cross-document transitions are not Baseline, since Firefox and Safari lag ([`foundations/modern-web-code-baseline.md`](foundations/modern-web-code-baseline.md)). The most significant native page transition advancement to date. Cross-document MPA transitions, as progressive enhancement, require one CSS line:
 
 ```css
 @view-transition { navigation: auto; }
@@ -478,21 +491,20 @@ function animate() {
 animate();
 ```
 
-Magnetic buttons — elements that attract toward the cursor — are the defining micro-interaction. Distance from cursor to element center calculated, proportional displacement applied. Creative hover states include underline animations (`scaleX(0)` to `scaleX(1)` on `::after`), text scramble effects, image previews following the cursor on hover.
+Magnetic buttons, elements that attract toward the cursor, are the defining micro-interaction. Distance from cursor to element center calculated, proportional displacement applied. Creative hover states include underline animations (`scaleX(0)` to `scaleX(1)` on `::after`), text scramble effects, image previews following the cursor on hover.
 
 ### 3.4 / WebGL — Three.js dominates, WebGPU arrives
 
-`Three.js` remains the standard. 111K+ GitHub stars. ~5M weekly npm downloads. WebGPU support became production-ready in `Three.js r171+` (September 2025). One benchmark: WebGL at 15,000 objects at 15fps, WebGPU at 200,000 objects at 60fps with near-zero CPU usage.
+`Three.js` remains the standard. 111K+ GitHub stars. ~5M weekly npm downloads. WebGPU support became production-ready in `Three.js r171+` (September 2025), with automatic WebGL fallback.
 
 For React: `React Three Fiber` adds declarative JSX over Three.js, paired with the `Drei` helper library. `OGL` (29KB total) handles lightweight shader effects when full Three.js is overkill. Common award-winning WebGL effects: image hover distortion via vertex displacement shaders, particle systems with custom GLSL, shader-based image-to-image transitions using noise functions, post-processing chains (bloom, color grading, vignette).
 
 ### 3.5 / Sound design — rare, differentiating
 
-Sound remains rare. Award-winning sites that use it powerfully — Messenger, Bruno Simon's portfolio — treat it as a sensory layer, not a gimmick. Implementation requires user consent. Browser autoplay policies block unmuted audio.
+Sound remains rare. Award-winning sites that use it well (Messenger, Bruno Simon's portfolio) treat it as a sensory layer, not a gimmick. Implementation requires user consent. Browser autoplay policies block unmuted audio.
 
 The pattern: a splash page offering Enter With Sound / Enter Without Sound. Or a persistent mute toggle. `Howler.js` (23K+ stars) is the primary library. Micro-interaction sounds never exceed 0.3 seconds. Ambient sounds stay at 0.05–0.15 volume. Preferred format: WebM/Opus. MP3 as fallback.
 
----
 
 ## 4 / UX Patterns Judges Reward
 
@@ -506,17 +518,17 @@ Mega menus suit sites with 20+ pages: multi-column layouts with descriptive text
 
 ### 4.2 / Scroll storytelling done right
 
-Horizontal scroll sections work best when mapped to vertical scroll input — scroll down translates to content moving left. `GSAP ScrollTrigger` pins a container and translates inner content horizontally. The pattern suits visual-forward content where text reading is minimal.
+Horizontal scroll sections work best when mapped to vertical scroll input: scroll down translates to content moving left. `GSAP ScrollTrigger` pins a container and translates inner content horizontally. The pattern suits visual-forward content where text reading is minimal.
 
 Scroll hijacking succeeds only under specific conditions. Visual-only content. Short duration. An available skip mechanism. NN/Group usability research found that scroll hijacking on text-heavy content causes extreme frustration. Apple succeeds because it controls content behind and inside the animation. Most sites lack this precision. The safer approach: scroll-triggered animations where elements respond to scroll while the user retains full speed control.
 
 ### 4.3 / Portfolio and case study patterns
 
-Top portfolios follow a consistent structure. Full-bleed hero image with project title and two or three key metrics. Brief problem framing. Process documentation with visual artifacts. Immersive walkthrough of the work. Bold large-type results — conversion percentage, revenue impact. Navigation to the next case study. Project grids use masonry layouts for varied imagery, organized 2–3 column grids with hover animations, or filtered grids using `GSAP Flip` for smooth state transitions.
+Top portfolios follow a consistent structure. Full-bleed hero image with project title and two or three key metrics. Brief problem framing. Process documentation with visual artifacts. Immersive walkthrough of the work. Bold large-type results: conversion percentage, revenue impact. Navigation to the next case study. Project grids use masonry layouts for varied imagery, organized 2–3 column grids with hover animations, or filtered grids using `GSAP Flip` for smooth state transitions.
 
 ### 4.4 / Luxury e-commerce differentiators
 
-Award-winning e-commerce integrates brand narrative into the shopping flow. The buying experience is intentional, not transactional. Storytelling product pages (Apple model). Radical transparency with materials and pricing breakdowns (Everlane model). Real-time customization previews. Generous whitespace as exclusivity signal. Cart experiences use slide-in panels without page navigation.
+Award-winning e-commerce integrates brand narrative into the shopping flow. Storytelling product pages (Apple model). Radical transparency with materials and pricing breakdowns (Everlane model). Real-time customization previews. Generous whitespace as exclusivity signal. Cart experiences use slide-in panels without page navigation.
 
 Luxury e-commerce requires serif typography, generous spacing, delayed modals (never on load), and aspirational imagery where every visible product is shoppable.
 
@@ -524,9 +536,8 @@ Luxury e-commerce requires serif typography, generous spacing, delayed modals (n
 
 Touch-first interactions following native app conventions. Swipe gestures. Bottom navigation bars. Thumb-zone optimization. Show-on-scroll-up is the gold standard for mobile headers. Typography uses `clamp()` for fluid scaling. Container queries enable modular responsive components.
 
-Performance is non-negotiable. 53% of users abandon sites loading beyond three seconds. Dark mode support on OLED screens reads as both battery-efficient and premium. Gesture-based interactions always include button alternatives. Accessibility imperative.
+Performance is non-negotiable: Google's DoubleClick research found 53% of mobile visits abandoned when a page takes longer than three seconds to load ([Google](https://support.google.com/adsense/answer/7450973)). Dark mode support on OLED screens reads as both battery-efficient and premium. Gesture-based interactions always include button alternatives. Accessibility imperative.
 
----
 
 ## 5 / Technical Implementation Reference
 
@@ -622,7 +633,7 @@ Image optimization uses the AVIF > WebP > JPEG cascade via `<picture>`. AVIF del
 </script>
 ```
 
-Award-winner targets: `LCP < 1.5s`, `CLS < 0.05`, `INP < 100ms`, total page weight under 3MB, sustained 60fps.
+Stretch targets, tighter than Google's "good" thresholds (LCP ≤ 2.5s, CLS ≤ 0.1, INP ≤ 200ms; [`foundations/modern-web-code-baseline.md`](foundations/modern-web-code-baseline.md)): `LCP < 1.5s`, `CLS < 0.05`, `INP < 100ms`, sustained 60fps. No jury publishes a page-weight cap; the "under 3 MB" figure circulating in agency blogs has no jury source ([`analysis/jury-evidence.md`](analysis/jury-evidence.md)).
 
 ### 5.5 / Accessibility coexists with beauty
 
@@ -640,61 +651,47 @@ The surgical approach to `prefers-reduced-motion` replaces motion with opacity. 
 }
 ```
 
-For JavaScript-heavy animations — Three.js, scroll-linked — detect the preference, disable smooth scroll, reduce particle counts, simplify transitions. Custom cursors require `aria-hidden="true"`. Animated text split into characters needs `aria-label` on the parent with the full text. Skip links, `:focus-visible` styling, semantic HTML beneath creative layouts, ARIA live regions for dynamic content — all non-negotiable.
+For JavaScript-heavy animations (Three.js, scroll-linked), detect the preference, disable smooth scroll, reduce particle counts, simplify transitions. Custom cursors require `aria-hidden="true"`. Animated text split into characters needs `aria-label` on the parent with the full text. Skip links, `:focus-visible` styling, semantic HTML beneath creative layouts, ARIA live regions for dynamic content: all non-negotiable.
 
-The European Accessibility Act took effect mid-2025. Legal requirement, not preference. accessiBe paid a $1M FTC fine. Overlay widgets are not accessibility.
+The European Accessibility Act took effect mid-2025. Legal requirement, not preference. The FTC ordered accessiBe to pay $1M over claims that its overlay widget made sites WCAG-compliant ([FTC, April 2025](https://www.ftc.gov/news-events/news/press-releases/2025/04/ftc-approves-final-order-requiring-accessibe-pay-1-million)). Overlay widgets are not accessibility.
 
----
 
-## 6 / What Awwwards Judges Actually Evaluate
+## 6 / What Awwwards Judges Evaluate
 
-Awwwards weights four criteria: Design (40%), Usability (30%), Creativity (20%), Content (10%). Sites are sent to a minimum of 18 jury members. Three outlier scores eliminated. Honorable Mention requires `6.5+`. Site of the Day typically `7.5+`. Developer Award requires `7+` from the developer jury.
+Awwwards weights four criteria: Design (40%), Usability (30%), Creativity (20%), Content (10%). Sites are sent to a minimum of 18 jury members and the three scores furthest from the average are eliminated ([about-evaluation](https://www.awwwards.com/about-evaluation/)). Honorable Mention requires `6.5+`. Site of the Day typically `7.5+`. Developer Award requires `7+` from the developer jury.
 
 The gap between `6–7` and `8+` is measurable.
 
 A `6–7` site is competent. Generic grid layouts. Stock photography. Desktop-first responsive breakpoints bolted on. No single interaction worth discussing. Template and AI-generated layouts are recognized instantly by jury members who are themselves working designers and developers.
 
-An `8+` site has one signature unforgettable interaction. Cross-device parity where mobile is reconsidered, not merely responsive. Complex visuals that load fast on mid-range devices. Real content with genuine photography. Scroll as narrative — content unfolding with purpose and pacing. Precise animation choreography in timing, easing, and sequencing.
+An `8+` site has one signature unforgettable interaction. Cross-device parity where mobile is reconsidered, not merely responsive. Complex visuals that load fast on mid-range devices. Real content with genuine photography. Scroll as narrative, content unfolding with purpose and pacing. Precise animation choreography in timing, easing, and sequencing.
 
 FWA (500+ jury members) rewards unconventional, experimental work more aggressively than Awwwards. Bold creativity and emerging technology usage matter most. CSS Design Awards scores UI (40%), UX (30%), Innovation (30%). WOTD requires average judge scores above 8.0. The most accessible for smaller teams and first submissions. Strategic path: submit to CSSDA first, use wins as credibility for Awwwards and FWA. Best submission months: February–April, September–November. Avoid late December–January.
 
----
 
 ## 7 / Studios That Win
 
-`Locomotive` (Montreal) won Awwwards Agency of the Year seven consecutive times through 2025. Nine to twelve Sites of the Day annually since 2018. Created `Locomotive Scroll`, the open-source smooth scrolling library, now rebuilt on `Lenis` for v5. Stack: custom front-end with `Locomotive Scroll`, `Lenis`, `GSAP`. Competitive advantage: small team, craft culture, every project treated as award-worthy.
+Which studios recur among winners, and what repeats across their sites, is measured in [Studio Variance](analysis/studio-variance.md). Across Locomotive, Obys, Studio Freight, Unseen Studio and Aristide Benoist (21 award-linked builds), section order can repeat; the device kit and the content archetype never do.
 
-`Active Theory` (LA + Amsterdam). Premier WebGL/3D studio. Emmy nominations. Signature: immersive cinematic WebGL on pitch-black canvases with XXL `Monument Grotesk` headlines. Built `Hydra`, a proprietary 3D engine evolved since 2012. Built `Aura`, a platform running WebGL natively across eight platforms. Philosophy: WebGL wins when it deepens user involvement. Fog instead of textures. Light instead of detail. Achieves `LCP ~1.3s` despite heavy shader work — lazy-loaded videos via `requestIdleCallback`, Draco-compressed meshes.
-
-`Resn` (Wellington + Amsterdam). 60 SOTD wins. 11 SOTM. Two SOTY. 350+ globally recognized awards. Signature: gooey interactive experiences with game design sensibilities. Pioneered 3D Gaussian Splatting for hyperreal web environments via Luma AI and PlayCanvas SuperSplat. Integrates AR face tracking and audio design as core elements.
-
-`Immersive Garden` (Paris). Awwwards Agency of the Year 2025. Studio and Developer Site of the Year. Premium digital experiences for luxury — Louis Vuitton Collectibles, Longines Spirit Flyback, Cartier Watches & Wonders. Balances usability with emotional immersion.
-
-Other consistently winning studios: `Cuberto` (sharp micro-interactions, custom cursor), `14islands` (Stockholm, AI-integrated design, Web Standards focus), `Dogstudio/Build in Amsterdam` (art-meets-technology WebGL), `Monogrid` (Italy, cinematic experiences for Prada, Netflix, Gucci), `Media.Monks` (58 SOTD, data + creativity fusion). Solo creative developers like `Aristide Benoist` win SOTD repeatedly through WebGL mastery and design collaboration.
-
-The meta-pattern across the consistently winning studios: custom tooling (proprietary engines and libraries produce unique output), performance treated as design constraint from day one, design-development integration with no handoff model, intentional award strategy planned from project kickoff, client selection prioritizing brands that allow creative freedom with adequate budgets ($60K–$200K+).
-
----
 
 ## 8 / Trends Shaping 2025–2030
 
-WebGPU replaces WebGL for high-performance 3D. `Three.js r171+` shipped production-ready WebGPU support with automatic WebGL fallback. Three Shading Language lets developers write shader logic in JavaScript and TypeScript, compiled to WGSL. `Safari 26` added support. Cross-browser availability complete.
+WebGPU replaces WebGL for high-performance 3D (Three.js support: §3.4). Three Shading Language lets developers write shader logic in JavaScript and TypeScript, compiled to WGSL. `Safari 26` added support. Cross-browser availability complete.
 
-The View Transitions API reaches production maturity. Cross-document transitions work with one CSS declaration. React Canary integrates `<ViewTransition />` for automatic orchestration. Scoped view transitions (`Chrome 140+`) enable multiple simultaneous transitions on one page.
+The View Transitions API reaches production maturity for same-document transitions. Cross-document transitions work with one CSS declaration in Chromium and are not yet Baseline. React Canary integrates `<ViewTransition />` for automatic orchestration. Scoped view transitions (`Chrome 140+`) enable multiple simultaneous transitions on one page.
 
 CSS Scroll-Driven Animations API gains real-world adoption. Part of Interop 2026 with expanding browser support. Tokopedia replaced custom JS scroll implementations for better e-commerce performance. The new `animation-trigger` property (`Chrome 145`) enables scroll-triggered time-based animations, replacing most IntersectionObserver use cases.
 
-AI transforms both the design process and the user experience. `Figma Make` and `UXPin Forge` generate production-quality layouts from actual React components. 73% of e-commerce sites use AI personalization with documented 15–35% conversion lifts. AI-driven interfaces adapt in real-time based on behavior, time of day, and inferred intent. AI-*generated* designs are immediately recognizable to experienced Awwwards judges and score poorly.
+AI transforms both the design process and the user experience. `Figma Make` and `UXPin Forge` generate production-quality layouts from actual React components. AI-driven interfaces adapt in real-time based on behavior, time of day, and inferred intent. AI-*generated* designs are immediately recognizable to experienced Awwwards judges and score poorly.
 
 Spatial design principles migrate from visionOS to flat screens. Depth, layers, z-axis thinking inspired by Apple Vision Pro influence conventional web design. Elements at different z-depths with parallax, lighting effects, and glassmorphism create perceived dimensionality without requiring spatial hardware.
 
 Apple's Liquid Glass accelerates glassmorphism maturation. Announced at WWDC 2025. The design language validates glassmorphism as a lasting design approach. Dark Glassmorphism — glass over dark backgrounds with ambient gradient color orbs — is one of 2026's defining UI treatments. Samsung One UI 7 and Windows 11 Fluent Design adopt similar material approaches.
 
-Typography becomes the hero element. Oversized kinetic type functions as primary design rather than communication. Variable fonts enable weight and width animation on scroll and hover. Funky curvy serifs, novel italics, custom bespoke typefaces drive brand differentiation. Cross-cultural type systems — Lingua-Lettering — design unified visual rhythm across Latin, Arabic, and CJK characters.
+Typography becomes the hero element. Oversized kinetic type functions as primary design rather than communication. Variable fonts enable weight and width animation on scroll and hover. Funky curvy serifs, novel italics, custom bespoke typefaces drive brand differentiation. Cross-cultural type systems (Lingua-Lettering) design unified visual rhythm across Latin, Arabic, and CJK characters.
 
-Organic shapes replace geometric rigidity. Anti-grid layouts. Soft gradients. Flowing CSS clip-path curves. Nature-inspired distilled aesthetics with earthy tones. A reaction to the AI-saturated digital era. Grain, noise, and texture overlays create tactile authenticity — increasingly via animated procedural noise in Canvas or WebGL rather than static image overlays.
+Organic shapes replace geometric rigidity. Anti-grid layouts. Soft gradients. Flowing CSS clip-path curves. Nature-inspired distilled aesthetics with earthy tones. A reaction to the AI-saturated digital era. Grain, noise, and texture overlays create tactile authenticity, increasingly via animated procedural noise in Canvas or WebGL rather than static image overlays.
 
----
 
 ## 9 / Anti-Patterns
 
@@ -710,7 +707,7 @@ Desktop-first with responsive breakpoints bolted on. Fails the usability criteri
 
 ### 9.2 / Performance
 
-Greenspector's analysis of Awwwards mobile excellence nominees found sites routinely reaching 400+ HTTP requests and 12+ MB on full scroll. 1MB+ videos loaded without lazy loading. 20+ font file requests. Images loaded twice through poor implementation.
+[Greenspector's analysis](https://greenspector.com/en/analysis_sites_nominated_mobile_excellence_awwwards/) of Awwwards mobile excellence nominees found sites routinely reaching 400+ HTTP requests and 12+ MB on full scroll. 1MB+ videos loaded without lazy loading. 20+ font file requests. Images loaded twice through poor implementation.
 
 The fix: native lazy loading, facade pattern for third-party embeds, AVIF/WebP images, variable fonts (one file replacing 20+ requests), code splitting, Speculation Rules for prerendering.
 
@@ -718,9 +715,9 @@ The fix: native lazy loading, facade pattern for third-party embeds, AVIF/WebP i
 
 Bento grid layouts have reached oversaturation.
 
-Heavy parallax scrolling as primary effect is now performance drag, often perceived as superfluous.
+Heavy parallax scrolling as primary effect is now performance drag.
 
-Cookie-cutter minimalism — blanding — the safe muted geometric sans-serif default that every brand adopted. Actively rejected.
+Cookie-cutter minimalism ("blanding"): the safe muted geometric sans-serif default that every brand adopted. Actively rejected.
 
 Generic chatbot widgets loading on page render. They obscure content. They add weight.
 
@@ -728,7 +725,7 @@ Static gradients as primary design element. No longer differentiated.
 
 ### 9.4 / Accessibility failures endemic to award-seeking sites
 
-Award-winning sites are stunning, creative, inspiring, and rarely keyboard-navigable.
+Award-winning sites are visually spectacular and rarely keyboard-navigable.
 
 Common failures: no keyboard navigation for custom interactions, missing alt text on images and 3D elements, glassmorphism designs failing WCAG 4.5:1 contrast, `outline: none` applied globally for aesthetics, keyboard traps in modals, no `prefers-reduced-motion` respect for heavy animations.
 
@@ -746,8 +743,6 @@ The style-over-substance trap. Beautiful animations that slow task completion. C
 
 ### 9.6 / The core tension and how winners resolve it
 
-The 2025–2026 era is defined by tension between expressive immersive visual richness and the imperatives of performance, accessibility, and usability. Studios that consistently win resolve this through purposeful technology adoption — using WebGPU, GSAP, and CSS APIs because they serve user needs, not because they are flashy. Accessibility as design value from day one. Performance as a feature: variable fonts, native CSS animations, progressive loading. Story-driven design where every visual choice serves communication.
+The 2025–2026 era is defined by tension between expressive immersive visual richness and the imperatives of performance, accessibility, and usability. Studios that consistently win resolve this through purposeful technology adoption: WebGPU, GSAP, and CSS APIs because they serve user needs, not because they are flashy. Accessibility as design value from day one. Performance as a feature: variable fonts, native CSS animations, progressive loading. Story-driven design where every visual choice serves communication.
 
-The formula is not maximum spectacle.
-
-It is one unforgettable signature moment, executed with precision across every device, loading in under two seconds.
+The formula is one unforgettable signature moment, executed with precision across every device and loading in under two seconds. Spectacle by itself wins nothing.

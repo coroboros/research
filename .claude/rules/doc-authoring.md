@@ -34,6 +34,8 @@ Optional:
 - `revision: "YYYY-MM-DD"` — last major revision after publication
 - `status: "draft" | "published"` — defaults to `published` when merged to `main`
 
+An index `README.md` inside an article folder carries the same frontmatter.
+
 ## Body
 
 Clean Markdown. One `# H1` matching `title`. No custom HTML beyond this rule file. Cite sources inline where claims are made — primary sources first, aggregators second. Keep `sources:` frontmatter as the consolidated deduplicated list.
