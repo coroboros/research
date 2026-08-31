@@ -260,9 +260,9 @@ Two SOTD sites, both read live end-to-end, each varying interaction by element c
 
 Everything responds the way a printed, tactile object would; the differentiation is by affordance.
 
-- **Button** → presses down into its hard shadow (`translateY(0.25em)`, shadow collapses to 0). *Affordance: a thing you push.*
-- **Text link** → underline draws from the left (`::before scaleX 0→1`). *Affordance: a thing you trace.*
-- **Card** → tilts `±3°`, alternating by grid parity. *Affordance: paper you nudge.*
+- **Button** → presses down into its hard shadow (`translateY(0.25em)`, shadow collapses to 0). *Affordance: a thing to push.*
+- **Text link** → underline draws from the left (`::before scaleX 0→1`). *Affordance: a thing to trace.*
+- **Card** → tilts `±3°`, alternating by grid parity. *Affordance: paper to nudge.*
 - **Sticker / expect-card** → peels in at `±5°` with scale. *Affordance: a decal.*
 - **Nav** → transparent, no border, off-black `#121212` text, fixed. *Affordance: none; it stays out of the way.*
 - One easing family binds them: `0.25s cubic-bezier(0.625,0.05,0,1)`. Different transforms, one clock, one metaphor: variety that reads as one hand.

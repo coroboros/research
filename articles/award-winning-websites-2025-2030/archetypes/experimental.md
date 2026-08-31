@@ -115,7 +115,7 @@ Winner motion is the medium. Reveals decode or unclip; scroll drives a single pr
 
 - **Objects rise from the ground as the intro:** the reveal *is* the world assembling. Bruno Simon: on start, "all the objects were going up from the ground while the [paper-unwrap] sound was playing." `(single-source, definitional for the stack)`.
 - **Single `progress` 0→1 drives everything:** load-bearing architecture, not a single effect. One GSAP timeline with a custom ease tweens a number copied into a shader uniform each frame; the shader stays stateless, GSAP owns the curve. Guignand `(single-source)`, matching Igloo and Active Theory's GSAP-drives-shader model.
-- **Scrub-linked next-project clip-path morph:** full-bleed unclip as you scroll to the page bottom. *Verified (Guignand):* `ScrollTrigger scrub: 1`; `insetV = max(0, 20 − 20·p)`, `insetH = max(0, 40 − 40·p)` → `inset(insetV% insetH% insetV% insetH%)`; background scale `1.3 − 0.3·p` (1.3×→1.0×); an SVG circle counter driven by `stroke-dashoffset = p·circumference`; a velocity ceiling skipping auto-nav if `getVelocity() > 2000`, and a 250ms commit timeout. `(technique, single-source)` for the numbers; the "preview expands into the next page" gesture is corpus-common.
+- **Scrub-linked next-project clip-path morph:** full-bleed unclip as the scroll reaches the page bottom. *Verified (Guignand):* `ScrollTrigger scrub: 1`; `insetV = max(0, 20 − 20·p)`, `insetH = max(0, 40 − 40·p)` → `inset(insetV% insetH% insetV% insetH%)`; background scale `1.3 − 0.3·p` (1.3×→1.0×); an SVG circle counter driven by `stroke-dashoffset = p·circumference`; a velocity ceiling skipping auto-nav if `getVelocity() > 2000`, and a 250ms commit timeout. `(technique, single-source)` for the numbers; the "preview expands into the next page" gesture is corpus-common.
 - **Optically-signed scene transition:** chromatic aberration + displacement + frost between scenes, reused everywhere so the site has one look when it moves. *Verified curve (Guignand):* displacement and chromatic offset both follow `parabola(progress, 2.)`, peaking at 50%; the block-reveal mask uses pixelated UVs `step()` against the progress uniform. Igloo, verbatim from the case study: "a mix of chromatic aberration, tech displacement and frost effect". ≥2.
 - **Scrub-blur depth carousel:** Kawase blur scales with scroll distance. *Verified (Codrops):* `scrub: 0.05`, blur `clamp(distance/maxDistance · 5, 0, 5)`, Kawase offsets 1/2/3, transition `duration: 1.5, power3.out`. *When:* horizontal media galleries. `(technique, single-source)`.
 - **Reveal choreography timed to element count:** split-text reveals where stagger shrinks as the unit gets smaller, so the whole line lands tight. *Verified (Osmo/Codrops):* lines `duration 0.8, stagger 0.08`; words `0.6 / 0.06`; letters `0.4 / 0.008`; `yPercent 110→0`; ease `cubic-bezier(0.625, 0.05, 0, 1)`. `(technique)`: never verified against a named winner's bundle, so ship the pattern, not the exact curve.
@@ -158,11 +158,11 @@ Each winner varies its interactions across button ≠ link ≠ image ≠ nav, ye
 
 | Element class | Interaction | Why it reads as one voice |
 |---|---|---|
-| Nav / menu | No HTML nav; sections are places you drive to; floor tiles form a path, walls bound space, panels label areas | Every UI is a 3D model obeying the same physics and matcap lighting |
-| Button / CTA | 3D objects you drive into or click; "click to start" gate | Same collision and material system as the world — no CSS button exists to break the illusion |
-| Link (project) | Camera tweens to an overhead read when you enter the projects zone | Motion is camera plus easing, consistent with the car's momentum |
+| Nav / menu | No HTML nav; sections are places to drive to; floor tiles form a path, walls bound space, panels label areas | Every UI is a 3D model obeying the same physics and matcap lighting |
+| Button / CTA | 3D objects to drive into or click; "click to start" gate | Same collision and material system as the world — no CSS button exists to break the illusion |
+| Link (project) | Camera tweens to an overhead read on entering the projects zone | Motion is camera plus easing, consistent with the car's momentum |
 | Image / media | Textured surfaces in-scene (matcaps), not `<img>` | One rendering pipeline; no DOM layer to feel bolted on |
-| Cursor | Deliberately absent — you drive; the car is the pointer | A lag-dot would contradict "everything is physical" |
+| Cursor | Deliberately absent — the visitor drives; the car is the pointer | A lag-dot would contradict "everything is physical" |
 | Intro | Objects rise from ground plus paper-unwrap sound | The reveal is the world's physics booting — same system, first frame |
 
 **Igloo Inc, unifying rule: one WebGL surface, one optical signature (ice + chromatic aberration).**
@@ -186,7 +186,7 @@ Three shapes hold this line, each defined by where the engine lives relative to 
 
 #### Shape A — World-as-page (no scroll)
 
-**Fingerprint.** No vertical scroll, no section stack. The first fold *is* a 3D world; sections are physical rooms, landmarks, and zones discovered by moving a navigation primitive (a car, a walker, a camera) across a hand-coded landscape. The loader is the world booting; wayfinding is a floor-tile path plus a hand-drawn "click to start". Funnel jobs collapse into space: attention = the world rendering, understanding = intuitive controls within ten seconds, proof = the secret rooms you discover, close = an in-world sign-off. Usability rests entirely on the intuitiveness of the primitive.
+**Fingerprint.** No vertical scroll, no section stack. The first fold *is* a 3D world; sections are physical rooms, landmarks, and zones discovered by moving a navigation primitive (a car, a walker, a camera) across a hand-coded landscape. The loader is the world booting; wayfinding is a floor-tile path plus a hand-drawn "click to start". Funnel jobs collapse into space: attention = the world rendering, understanding = intuitive controls within ten seconds, proof = the secret rooms the visitor discovers, close = an in-world sign-off. Usability rests entirely on the intuitiveness of the primitive.
 
 **Ordered skeleton.** `world boot (loader) → spawn point with control affordance → drive/walk to discover landmarks (Home, Options, Achievements, Circuit, Behind-the-scene, Three.js Journey, Devlogs, Source code, Musics) → per-area rooms with bespoke interactions → in-world footer sign-off`.
 
@@ -311,7 +311,7 @@ The footer restates identity and contact in the site's own voice; studios add op
 
 ### Spectacle menu
 
-- **Bruno Simon.** Driving the car through the low-poly town, discovering secret rooms and visitor whispers. Trigger: the start gesture. Payoff: physics you can push against. Replayable because it is a game, not a scroll.
+- **Bruno Simon.** Driving the car through the low-poly town, discovering secret rooms and visitor whispers. Trigger: the start gesture. Payoff: physics to push against. Replayable because it is a game, not a scroll.
 - **Igloo Inc.** The links section as an "interactive particle simulation that would form different models based on the selected external link". Trigger: hovering or selecting a link. Payoff: matter forming meaning in real time. Replayable because each link is a different formation.
 - **Aristide.** The click-into-project route morph (Animations/Transitions **9.20**): the giant TNY title and its WebGL imagery transform into the case study, each project in its own color. Replayable because 30 projects means 30 distinct entries.
 - **Lusion.** The Featured Work reveal and "Play Reel": the cinematic real-time mograph payoff.

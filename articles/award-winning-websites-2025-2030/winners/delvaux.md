@@ -11,7 +11,7 @@ sources:
 
 # Delvaux — Live CSS and JS Read
 
-Delvaux reads luxury through what it withholds: buttons never change color on hover, the largest image zoom in the stylesheet is 2%, and the site ships neither a custom cursor nor a fullscreen preloader. What does move is a vertical label roll on the CTA and a `clip-path` wipe serving as the house transition. Source-level read of the shipped CSS and JS bundle behind the [Delvaux Digital Flagship Store](https://www.awwwards.com/sites/delvaux-digital-flagship-store), for the [corporate-luxury archetype](../archetypes/corporate-luxury.md). Parent reference: [Award-Winning Websites — 2025–2030 Reference](../award-winning-websites-2025-2030.md).
+Delvaux reads luxury through what it withholds: buttons never change color on hover, the largest image zoom in the stylesheet is 2%, and the site ships neither a custom cursor nor a fullscreen preloader. What does move is a vertical label roll on the CTA and a `clip-path` wipe, the house transition. Source-level read of the shipped CSS and JS bundle behind the [Delvaux Digital Flagship Store](https://www.awwwards.com/sites/delvaux-digital-flagship-store), for the [corporate-luxury archetype](../archetypes/corporate-luxury.md). Parent reference: [Award-Winning Websites — 2025–2030 Reference](../award-winning-websites-2025-2030.md).
 
 ## Awards and stack
 

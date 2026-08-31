@@ -112,7 +112,7 @@ The named ease `cubic-bezier(.445,.05,.55,.95)` is the published ease-in-out-sin
 
 ### Form 4 — wipe-with-wordmark
 
-The transition panel is itself a typographic moment showing where you are going.
+The transition panel is itself a typographic moment showing the destination.
 
 | Beat | Mat Voyce — Next.js (winner-verified CSS) | Dennis Snellenberg — Barba |
 |---|---|---|
@@ -182,10 +182,10 @@ The cost is hydration and a JS-owned scroll (`scrollBehavior` / `scrollRestorati
 Why the award tier skips it, grounded on Baseline status:
 
 - Same-document View Transitions reached Baseline Newly available around October 2025 via Firefox 144: progressive enhancement only, feature-detect `startViewTransition`. Cross-document View Transitions are still absent in Firefox as of mid-2026, so not Baseline.
-- The default is a **cross-fade** you get in two CSS lines, which is exactly the transition winners out-design with GSAP-timed cover panels, Rive overlays, Flip morphs, and kinetic wipes. It gives less timeline control than GSAP over a Taxi or Barba swap.
+- The default is a **cross-fade** that takes two CSS lines, which is exactly the transition winners out-design with GSAP-timed cover panels, Rive overlays, Flip morphs, and kinetic wipes. It gives less timeline control than GSAP over a Taxi or Barba swap.
 - It is the right tool for a content or editorial site that wants tasteful morphs cheaply: a named-element morph via `view-transition-name` on a thumbnail-to-hero pair. That is the progressive-enhancement floor, not the signature.
 
-**Net.** For an award-grade route transition, reach for a PJAX router (Taxi for MPA, Webflow, or static; Barba when you want per-namespace transitions) or the framework's own `<Transition>` with an asymmetric ease.
+**Net.** For an award-grade route transition, reach for a PJAX router (Taxi for MPA, Webflow, or static; Barba for per-namespace transitions) or the framework's own `<Transition>` with an asymmetric ease.
 
 ## The loader-coherence rule
 

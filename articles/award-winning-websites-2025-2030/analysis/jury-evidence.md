@@ -83,7 +83,7 @@ Awwwards publishes four weighted criteria and defines none of them, no jury publ
 
 ### Limits of the byte evidence
 
-- **Messenger 5.7 MB initial / 17.5 MB total** is single-lineage: every citation traces to one person reading the network tab, and "initial" versus "total" are that author's definitions. It stands as a counter-example to a universal cap, since the favorable 5.7 MB figure already exceeds 3 MB and the technical jury that saw that network tab gave the site the Developer award.
+- **Messenger 5.7 MB initial / 17.5 MB total** is single-lineage: every citation traces to one person reading the network tab, and "initial" versus "total" are that author's definitions. It is a counter-example to a universal cap, since the favorable 5.7 MB figure already exceeds 3 MB and the technical jury that saw that network tab gave the site the Developer award.
 - **Betterup >12 MB** was measured full-scroll, on a nominee rather than a winner, by a non-jury lab: supporting evidence for "heavy sites get nominated," nothing more.
 - Messenger is the only byte-measured winner; the claims this rules out are collected under [Refuted](#refuted).
 

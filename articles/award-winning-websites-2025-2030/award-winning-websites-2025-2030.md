@@ -259,7 +259,7 @@ Built around Cartier's Geneva pavilion. Six contemplative 3D alcove universes (s
 
 Modular asymmetric tiles. Inspired by Japanese bento boxes, popularized by Apple keynotes. Consistent 12–20px border-radius. Equal gutter widths (12–24px). Large hero cards (2×2 spans) for primary features. Each tile is a self-contained information unit with its own visual treatment. Container queries enable self-aware tiles that adapt to their own dimensions.
 
-The archetype is reaching saturation. Many designers report bento fatigue. Still highly functional for SaaS product pages.
+The archetype is reaching saturation; bento fatigue has set in. Still highly functional for SaaS product pages.
 
 Use case: SaaS, product launches, feature comparison pages.
 
@@ -290,7 +290,7 @@ Use case: SaaS, product launches, feature comparison pages.
 **Award.** Awwwards Site of the Day, 6 May 2025 (7.62) + Site of the Month, May 2025 (+ Developer Award 7.84, Product Honors)
 **Studio.** None; open-source library project led by Julian Garnier.
 
-A canonical modern bento layout. A modular asymmetric grid of self-contained feature cards, each demoing one capability — scroll scrubber, lightweight modular core, complete animator's toolbox, layout-grid demos that morph between bento configurations. Consistent corner radii. Neutral palette. The Notion/Linear/Apple-iOS lineage executed at SOTM tier. The site is a hybrid (brutalist palette, bento structure), which is why some sources tag it brutalist. The structural logic is bento. Use it as the bento reference.
+A canonical modern bento layout. A modular asymmetric grid of self-contained feature cards, each demoing one capability — scroll scrubber, lightweight modular core, complete animator's toolbox, layout-grid demos that morph between bento configurations. Consistent corner radii. Neutral palette. The Notion/Linear/Apple-iOS lineage executed at SOTM tier. The site is a hybrid (brutalist palette, bento structure), hence the occasional brutalist tag. The structural logic is bento. Use it as the bento reference.
 
 
 ## 2 / Core UI Foundations
@@ -528,7 +528,7 @@ Top portfolios follow a consistent structure. Full-bleed hero image with project
 
 ### 4.4 / Luxury e-commerce differentiators
 
-Award-winning e-commerce integrates brand narrative into the shopping flow. The buying experience is intentional, not transactional. Storytelling product pages (Apple model). Radical transparency with materials and pricing breakdowns (Everlane model). Real-time customization previews. Generous whitespace as exclusivity signal. Cart experiences use slide-in panels without page navigation.
+Award-winning e-commerce integrates brand narrative into the shopping flow. Storytelling product pages (Apple model). Radical transparency with materials and pricing breakdowns (Everlane model). Real-time customization previews. Generous whitespace as exclusivity signal. Cart experiences use slide-in panels without page navigation.
 
 Luxury e-commerce requires serif typography, generous spacing, delayed modals (never on load), and aspirational imagery where every visible product is shoppable.
 
@@ -715,7 +715,7 @@ The fix: native lazy loading, facade pattern for third-party embeds, AVIF/WebP i
 
 Bento grid layouts have reached oversaturation.
 
-Heavy parallax scrolling as primary effect is now performance drag, often perceived as superfluous.
+Heavy parallax scrolling as primary effect is now performance drag.
 
 Cookie-cutter minimalism ("blanding"): the safe muted geometric sans-serif default that every brand adopted. Actively rejected.
 
@@ -725,7 +725,7 @@ Static gradients as primary design element. No longer differentiated.
 
 ### 9.4 / Accessibility failures endemic to award-seeking sites
 
-Award-winning sites are stunning, creative, inspiring, and rarely keyboard-navigable.
+Award-winning sites are visually spectacular and rarely keyboard-navigable.
 
 Common failures: no keyboard navigation for custom interactions, missing alt text on images and 3D elements, glassmorphism designs failing WCAG 4.5:1 contrast, `outline: none` applied globally for aesthetics, keyboard traps in modals, no `prefers-reduced-motion` respect for heavy animations.
 

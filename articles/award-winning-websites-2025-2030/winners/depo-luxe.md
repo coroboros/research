@@ -55,7 +55,7 @@ Evidence tags: `[CSS]` / `[JS]` / `[HTML]` = read from the site's own source, fe
 
 1. **WebGL video/image transition layer** `[JS]`: a body-level full-screen `<canvas>` running the Three.js shader plane over the monochrome DOM. The animations-8.4 and Developer Award centerpiece.
 2. **Fullscreen video-navigation takeover** `[CSS]`: `.plaver-video-full`: `background:#000`, `100vh`, giant scrubbing timer (`--font-size-timer:20.5vw`), `cursor:none`, dashed progress track (`border-top/bottom:1px dashed`), controls at `60px`/`120px` widths, a cinematic full-bleed player mode for selected works.
-3. **Section palette inversion** `[CSS]`: `palette-primary`↔`palette-secondary` flip the entire black/white scheme, and the nav's 5% blur tint with it, as you scroll between sections.
+3. **Section palette inversion** `[CSS]`: `palette-primary`↔`palette-secondary` flip the entire black/white scheme, and the nav's 5% blur tint with it, on scroll between sections.
 
 ## Exact tokens
 

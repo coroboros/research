@@ -120,7 +120,7 @@ Two failure modes survive a high channel count:
 
 ## Density versus coherence and budget
 
-More channels risk incoherence, restraint, and performance. Winners resolve all three.
+Channel density draws four objections: incoherence, the restraint expected of quiet registers, reduced-motion accessibility, and the frame budget. Winners answer all four.
 
 - **Against one grammar.** Winners bind channels through one easing family plus one metaphor. Cuberto's four interactions all ride one expo-out curve. Delvaux ships a byte-identical `cubic-bezier(0.25,1,0.5,1)` across CSS and GSAP. FlowFest binds every transform to `0.25s cubic-bezier(0.625,0.05,0,1)` under an "objects on a table" metaphor. All three are live-read values. Density coheres *because* of the grammar.
 - **Against restraint.** Quiet archetypes keep the count and drop the amplitude. Restraint lowers amplitude, never coverage: Terminal, a minimalist winner, still ships C1, C2, C5, and C6, just quietly. The band holds; the amplitude dial handles restraint.

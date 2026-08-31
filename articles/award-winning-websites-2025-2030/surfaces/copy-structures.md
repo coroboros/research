@@ -52,7 +52,7 @@ sources:
 
 # Copy Structures on Winners — Every Hero Lands on a Concrete Anchor
 
-Every winner hero lands on a concrete anchor (a named place, date, count, material, gesture, or refusal), and none opens on a distribution-default line. The headline shapes, CTA verbs, specificity anchors, voice mechanics, microcopy, and copy tells below are extracted from live pages. Archetypes and their canonical winners live in [the parent reference](../award-winning-websites-2025-2030.md).
+Every winner hero lands on a concrete anchor (a named place, date, count, material, gesture, or refusal), and none opens on a distribution-default line. The headline shapes, CTA verbs, specificity anchors, voice mechanics, microcopy, and copy tells below all come from live pages. Archetypes and their canonical winners live in [the parent reference](../award-winning-websites-2025-2030.md).
 
 **Corpus.** 27 winners touched, 22 with copy read live: either a browser `innerText` DOM read (Ponpon Mania, Mat Voyce, which block fetches at 403 and 307) or an HTML-to-markdown fetch of the served page. Three sites read live returned near-empty copy because they are WebGL SPAs: Igloo Inc, Site of the Year (SOTY) 2024; Active Theory; Aristide Benoist (role tag only). Four were blocked or media-only: Naked City Films, Site of the Day (SOTD) 2026, blocked at 403; Depo Luxe (SOTD Jul 2026); Sculpting Harmony, Site of the Month (SOTM) Nov 2023; Longines (timeout).
 
@@ -247,7 +247,7 @@ A hero carrying none of {named place, date, count, material, gesture, refusal} i
 
 ## Anti-signals
 
-1. **Distribution-default openers.** None of the 19 award-verified sites read live, nor the Anthropic control, opens on *"Built for the modern team"*, *"Unleash your X"*, *"Where A meets B"*, *"Supercharge your workflow"*, *"Seamless integration"*, *"Next-generation"*, or *"In today's digital landscape"*. Every winner hero instead lands on a specificity class. This is a sampled negative across roughly 24 live reads, not an exhaustive full-text sweep.
+1. **Distribution-default openers.** None of the 19 award-verified sites read live, nor the Anthropic control, opens on *"Built for the modern team"*, *"Unleash your X"*, *"Where A meets B"*, *"Supercharge your workflow"*, *"Seamless integration"*, *"Next-generation"*, or *"In today's digital landscape"*. Every winner hero instead lands on a specificity class. This is a sampled negative across the 22 sites read live and the Anthropic control, not an exhaustive full-text sweep.
 2. **Abstract rule of three.** The triplet fails only when the three items are abstractions (*"innovative, scalable, seamless"*). Winner triplets are concrete: *"Be true / Be strong / Be bold"* (13g), *"TYPE DESIGN & ILLUSTRATION / TYPE ANIMATION / MOTION DESIGN"* (Mat Voyce), *"Clean, Conscious, Performance skincare."* (Truekind). Test the items, not the pattern.
 3. **Self-narration and category description.** The name-card states role and place, and stops.
 4. **Generic CTA sprawl.** When section CTAs collapse to *"[noun] details"*, *"Learn more"*, and *"Read More"*, the funnel has decayed to a feature index. Terminal Industries shows it: *"Benefit 01"* / *"Benefit 02"* / *"Benefit 03"* plus roughly eight literal *"[noun] details"* CTAs (Customer, Deployment, Feature, Integration, API, Cost savings, Scalability, plus *"Details here"*) inside 8 to 16 generic CTAs overall. Its hero stays a single reinvention claim; the decay is a body-copy failure, and it is visible on the homepage.

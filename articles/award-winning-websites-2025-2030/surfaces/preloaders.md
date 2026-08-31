@@ -95,7 +95,7 @@ Variants:
 
 - **Bare accelerating `1→100`.** No curtain; the counter *is* the intro. Gabriel Contassot (technique; the live route-curtain is winner-verified, the counter is not visible in the live DOM). The minimalist floor form.
 - **Asset-gated diegetic ratio.** Bruno Simon: `.global-progress .ratio{color:#ffceca; font-weight:700}` climbs, then `.global-progress.is-achieved .ratio{color:#d5ff95}` recolors to lime **and** prints elapsed time via `.is-achieved .time{display:inline; font-weight:700}` with `.time:before{content:"in "; opacity:.65}`. The counter reports the real load, not a timer. Off-screen font preload sits at `.fonts-loader{position:fixed; top:calc(100% + 1px)}`. (winner-verified)
-- **Roman numerals are index micro-type, not a loader counter.** Depo Luxe `.counter-roman{text-align:right; width:50%}`, `span{display:inline-block}`, `.progress .line .counter-roman{opacity:.4}` stand as read from `main.b0b97476….css`, but they number the works index rather than load progress: the [Depo Luxe live read](../winners/depo-luxe.md) finds `#Preloader` to be an SVG logo build plus a `video-preloader` with no numeric percent element, and the roman numbering runs off `counter(roman-counter, upper-roman)` on the works rows. The luxury register holds; the loader is not where it lives.
+- **Roman numerals are index micro-type, not a loader counter.** Depo Luxe `.counter-roman{text-align:right; width:50%}`, `span{display:inline-block}`, `.progress .line .counter-roman{opacity:.4}` are read from `main.b0b97476….css`, but they number the works index rather than load progress: the [Depo Luxe live read](../winners/depo-luxe.md) finds `#Preloader` to be an SVG logo build plus a `video-preloader` with no numeric percent element, and the roman numbering runs off `counter(roman-counter, upper-roman)` on the works rows. The luxury register holds; the loader is not where it lives.
 - **`steps(n)` concept numerals.** Naya (countdown preloader plus custom cursor), GT America / Black Messiah. Numerals carry the brand, asset-gated. (technique / single-source, not read live)
 
 ### 2. Split-curtain
@@ -178,7 +178,7 @@ No preloader element in the DOM; the entrance is carried by first paint plus rev
 
 1. **Curtain retract over a pre-composed fold.** The hero is painted *behind* the curtain, so retracting reveals a finished frame rather than a masked slow-load. Terminal (`50svh` panels), Gabriel (`scale-y-0` wipe).
 2. **Counter recolors into the accent.** The numerals resolve on the palette's hero color, pre-stating it. Terminal gray → lime → dark-green (the 30% keyframe is lime); Bruno pink `#ffceca` → lime `#d5ff95` on `.is-achieved`.
-3. **Loader element morphs into persistent UI.** Son Daven's bottom-pinned `preloader_logo` becomes `header_logo` by Flip; Depo Luxe shares one `__logo` class across preloader, header, and footer; Eloy's hero top-bar becomes the nav (single-source). The element you watched load never disappears; it becomes furniture.
+3. **Loader element morphs into persistent UI.** Son Daven's bottom-pinned `preloader_logo` becomes `header_logo` by Flip; Depo Luxe shares one `__logo` class across preloader, header, and footer; Eloy's hero top-bar becomes the nav (single-source). The element the visitor watched load never disappears; it becomes furniture.
 4. **Clip-path reveal wipe over the live hero.** Lando `clip-path: ellipse(100% 120% at 50% 0%)`, top-anchored and verbatim in the served DOM, opens the WebGL/Rive hero from the top edge with no hard cut. The DOM also carries `ellipse(100% 50% at 50% 50%)` and `ellipse(80% 50% at 50% 50%)`.
 5. **Logo assembly into the hero.** Depo's `svg path{opacity:0}` fills the mark, then the mark seats into the hero.
 6. **Narrative continuation.** The loader's subject persists into section one: Ponpon's mascot into the homepage, Siena's video into the first section, FlowFest's chat cloud typing back to the hero's own resident text, Bisous's loader into the slider.
@@ -238,7 +238,7 @@ Absent from every winner examined. A build that ships one drops below the award 
 
 ## Refuted
 
-- **Truekind ships no preloader (winner-verified absence).** False: Truekind ships a progress-tracked full-screen preloader, confirmed in CSS, DOM, and bundle state; in the archetype map only Anthropic stands as the light-editorial "none."
+- **Truekind ships no preloader (winner-verified absence).** False: Truekind ships a progress-tracked full-screen preloader, confirmed in CSS, DOM, and bundle state; in the archetype map only Anthropic is the light-editorial "none."
 - **Fixed-duration loaders stay ≤2.8s (winner-verified synthesis).** Unsupported: no loader CSS carries a duration and every retract is JS/GSAP-driven, so no ceiling was measured.
 - **FlowFest ships no preloader (winner-verified absence).** False: its own `initLoader` runs a full chat-cloud typing loader before the hero handoff, and internal Barba navigations run a shortened `initLoaderShort` echo of it ([brutalist](../archetypes/brutalist.md)); the live-read census is **6 none / 13 loader**, and the brutalist default is a deliberate in-character intro.
 - **No winner read at depth skips its preloader on revisit.** False: Son Daven's `initPreloader` branches on `sessionStorage.hasVisited`, full intro on the first visit, short version after ([Son Daven live read](../winners/son-daven.md)).

@@ -88,7 +88,7 @@ A paragraph or headline sits faintly visible and brightens word by word as it sc
 - **Trigger.** Scroll-scrubbed, `start: top`, `end: +≈0.7×viewport`, `stagger: 0.1`, `ease: "none"`.
 - **Approach.** GSAP ScrollTrigger + split spans, or pure CSS with `animation-timeline: view()` and `@keyframes { from { opacity: .15 } to { opacity: 1 } }` per span with an index-based `animation-range`.
 - **Legible-first.** Yes. Baseline ≥ 0.15 opacity keeps text readable throughout. The safe default for body copy.
-- **Deps.** The GSAP version is bulletproof cross-browser; the pure-CSS version works in Chromium and Safari 26, degrading to full opacity elsewhere.
+- **Deps.** The GSAP version runs cross-browser; the pure-CSS version works in Chromium and Safari 26, degrading to full opacity elsewhere.
 
 ### 3. Fire-once per-char color-in with accent flash (Terminal's `.split-chars`)
 
