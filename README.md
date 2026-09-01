@@ -33,9 +33,9 @@ Long-form technical references under [articles/](articles/). See [INDEX.md](INDE
 |---------|--------|
 | [The 2026 — 2030 Stack](articles/2026-2030-stack.md) | stack, infrastructure, edge-computing, sync-engines, typescript, elixir |
 | [Award-Winning Websites — 2025–2030 Reference](articles/award-winning-websites-2025-2030/award-winning-websites-2025-2030.md) | web-design, awwwards, animation, webgl, performance |
-| [The Winning Recipe of AI Design Skills](articles/winning-recipe-of-ai-design-skills.md) | web-design, agent-skills, ai-slop, typography, verification |
 | [Suno v5.5 — Operator Reference](articles/suno-v5-5-operator-reference.md) | ai-engineering, ai-music, suno, prompt-engineering, voice-cloning, copyright |
 | [MCP Is Not the Problem](articles/mcp-is-not-the-problem.md) | mcp, claude-code, agent-skills, cli, code-mode, context-window |
+| [The Winning Recipe of AI Design Skills](articles/winning-recipe-of-ai-design-skills.md) | web-design, agent-skills, ai-slop, typography, verification |
 
 ---
 
