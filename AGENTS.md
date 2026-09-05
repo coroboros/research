@@ -2,12 +2,18 @@
 
 Public technical articles and reference notes. Documentation only; no build or application tests.
 
+## Project constraints
+
+Prose is CC BY 4.0; code examples are MIT. See `LICENSE.md`.
+
 ## Rule index
 
-Read `.claude/rules/doc-authoring.md` before authoring articles or notes. It owns format, frontmatter, citations, indexing, and publication hygiene. Reuse unchanged guidance already loaded in the session.
+For articles or notes, read `.agents/rules/doc-authoring.md`: format, frontmatter, citations, indexing, and publication hygiene. Reuse unchanged guidance already loaded in the session.
 
-## Git and validation
+## Validation
 
-- Target `main` through a PR. No `CHANGELOG.md` or tagged releases; articles record dates and revisions in frontmatter.
-- Prose is CC BY 4.0; code examples are MIT. See `LICENSE.md`.
-- Check changed Markdown, relative links, and affected index entries before opening a PR.
+Check changed Markdown, relative links, and affected index entries before opening a PR.
+
+## Release
+
+Target `main` through a PR. No `CHANGELOG.md` or tagged releases; articles record dates and revisions in frontmatter.

@@ -60,7 +60,7 @@ See [License](#license) for usage terms.
 
 ## Contributing
 
-Articles and notes follow [`.claude/rules/doc-authoring.md`](.claude/rules/doc-authoring.md).
+Articles and notes follow [`.agents/rules/doc-authoring.md`](.agents/rules/doc-authoring.md).
 
 ---
 

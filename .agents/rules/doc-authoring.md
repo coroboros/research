@@ -1,13 +1,13 @@
-# Documentation Authoring
+# Documentation authoring
 
-Rules for authoring content in this repo. Same frontmatter and citation discipline across both formats.
+Articles and notes share the frontmatter and citation contract below.
 
 ## Format taxonomy
 
-- `articles/` — long-form technical references, standalone reading (typically 500+ lines)
-- `notes/` — short-form observations, hypotheses, synthesis (typically under 200 lines)
+- `articles/` — standalone technical references.
+- `notes/` — focused observations, hypotheses, or synthesis.
 
-When in doubt between article and note, default to article — promoting a note later is easier than splitting an article.
+Choose by purpose; length follows the material the reader needs.
 
 ## Filename
 
@@ -40,15 +40,13 @@ An index `README.md` inside an article folder carries the same frontmatter.
 
 Clean Markdown. One `# H1` matching `title`. No custom HTML beyond this rule file. Cite sources inline where claims are made — primary sources first, aggregators second. Keep `sources:` frontmatter as the consolidated deduplicated list.
 
-## INDEX
+## Indexes
 
 Add every new article or note to `INDEX.md` under the matching topic section. Create a new section when the entry opens up a new topic area that will plausibly collect more than one piece over time. Mark the format (`**Article**` or `**Note**`) as a prefix in the index entry — topic drives navigation, format prefix sets reading expectations.
 
-## README tables
+`README.md` surfaces major references in its Articles and Notes tables; update the matching table when shipping a major piece. `INDEX.md` remains the complete listing.
 
-`README.md` has two tables — Articles and Notes. Update the matching one when shipping a major piece. The README surfaces major references; `INDEX.md` is the complete listing.
-
-## What NOT to author here
+## Content boundaries
 
 - Anthropic-authored documentation — belongs in `coroboros/archivist/docs/insights/`
 - Internal SOPs, proprietary prompts, unsanitized strategy notes — belong in a private location, not in this public repo
@@ -56,8 +54,4 @@ Add every new article or note to `INDEX.md` under the matching topic section. Cr
 
 ## Promoting content from a private source
 
-When content is ready to move from a private location to this public repo:
-
-1. Sanitize — remove any references to internal systems, client names, un-attributed quotes.
-2. Rewrite frontmatter (`author: "Coroboros"`, fresh `date`, complete `sources`).
-3. Remove or archive the internal version at its private origin to avoid two-version drift.
+Public promotion requires sanitized content: remove private system references, client names, and unattributed quotes; set `author: "Coroboros"`, the publication date, and complete `sources`. With authorization at the private origin, archive or remove the working version so it cannot compete with the published source. Preserve required provenance.
