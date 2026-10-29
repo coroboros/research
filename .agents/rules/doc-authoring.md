@@ -48,7 +48,7 @@ Add every new article or note to `INDEX.md` under the matching topic section. Cr
 
 ## Content boundaries
 
-- Anthropic-authored documentation — belongs in `coroboros/archivist/docs/insights/`
+- Third-party documentation and articles — link to the publisher instead of republishing them
 - Internal SOPs, proprietary prompts, unsanitized strategy notes — belong in a private location, not in this public repo
 - Runnable code and skills — `coroboros/agent-skills`
 
