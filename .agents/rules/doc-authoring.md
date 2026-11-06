@@ -11,7 +11,7 @@ Choose by purpose; length follows the material the reader needs.
 
 ## Filename
 
-Follow the canonical [Claude Project KB naming conventions](https://github.com/coroboros/archivist/blob/main/docs/insights/claude-project-knowledge-bases-best-practices.md) (kebab-case, ASCII-only, descriptive). Curated in `coroboros/archivist`.
+Kebab-case, ASCII-only and descriptive.
 
 ## Frontmatter
 
